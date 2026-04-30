@@ -6,13 +6,15 @@ export default defineConfig({
   base: '/guide/',
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' }
+      { text: 'Home', link: '/' },
+      { text: 'AutoResize PhotoFrame', link: '/autoresize-photoframe' }
     ],
     sidebar: [
       {
         text: 'Guide',
         items: [
-          { text: 'Introduction', link: '/' }
+          { text: 'Introduction', link: '/' },
+          { text: 'AutoResize PhotoFrame', link: '/autoresize-photoframe' }
         ]
       }
     ]
