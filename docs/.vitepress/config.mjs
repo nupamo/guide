@@ -1,12 +1,14 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'Guide',
-  description: 'A VitePress guide repository',
+  title: 'Nupamo Project Guide',
+  description: 'Guide for Nupamo\'s Unity assets and shaders.',
   base: '/guide/',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'AutoResize PhotoGallery', link: '/photogallery/' },
+      { text: 'AutoResize PhotoFrame', link: '/photoframe/frame-materials' },
     ],
     outline: {
       level: [2, 3],
