@@ -11,8 +11,8 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: '홈', link: '/' },
-          { text: 'AutoResize PhotoGallery', link: '/photogallery/' },
-          { text: 'AutoResize PhotoFrame', link: '/photoframe/frame-materials' },
+          { text: 'AutoResize PhotoGallery', link: 'https://nupamo.booth.pm/items/8301374' },
+          { text: 'AutoResize PhotoFrame (Free)', link: 'https://nupamo.booth.pm/items/1740420' },
         ],
         outline: {
           level: [2, 3],

@@ -50,7 +50,7 @@ If you want it to hover slightly off the wall surface, change the Z value to a v
 
 ## The world size is too large because the photos are too big
 
-Try setting `Build Photo Quality` to `FHD`.
+Try setting `Build Photo Max Size` to `1024` or `2048`.
 
 The more photos you have, the more this helps reduce build size and memory usage compared to using the original size.
 
