@@ -48,8 +48,8 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/en/' },
-          { text: 'AutoResize PhotoGallery', link: '/en/photogallery/' },
-          { text: 'AutoResize PhotoFrame', link: '/en/photoframe/frame-materials' },
+          { text: 'AutoResize PhotoGallery', link: 'https://nupamo.booth.pm/items/8301374' },
+          { text: 'AutoResize PhotoFrame (Free)', link: 'https://nupamo.booth.pm/items/1740420' },
         ],
         outline: {
           level: [2, 3],
@@ -85,8 +85,8 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'ホーム', link: '/ja/' },
-          { text: 'AutoResize PhotoGallery', link: '/ja/photogallery/' },
-          { text: 'AutoResize PhotoFrame', link: '/ja/photoframe/frame-materials' },
+          { text: 'AutoResize PhotoGallery', link: 'https://nupamo.booth.pm/items/8301374' },
+          { text: 'AutoResize PhotoFrame (Free)', link: 'https://nupamo.booth.pm/items/1740420' },
         ],
         outline: {
           level: [2, 3],
