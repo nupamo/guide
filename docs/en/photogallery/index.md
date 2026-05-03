@@ -5,6 +5,10 @@ description: Unity asset guide for easily placing photo frames in VRChat worlds
 
 # AutoResize PhotoGallery
 
+<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  <iframe width="662" height="372" src="https://www.youtube.com/embed/TEa14lDnx6Q" title="AutoResize PhotoGallery Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);"></iframe>
+</div>
+
 AutoResize PhotoGallery is a Unity asset designed for placing multiple photos, illustrations, and posters in VRChat worlds all at once.
 
 When you add a photo texture, the frame automatically adjusts to display it at the correct aspect ratio. You don't have to calculate mesh sizes manually for each photo or worry about spacing between them.

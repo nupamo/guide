@@ -5,6 +5,10 @@ description: VRChat 월드에 사진 액자를 쉽게 배치하는 Unity 에셋 
 
 # AutoResize PhotoGallery
 
+<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  <iframe width="662" height="372" src="https://www.youtube.com/embed/TEa14lDnx6Q" title="AutoResize PhotoGallery Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);"></iframe>
+</div>
+
 AutoResize PhotoGallery는 VRChat 월드에 여러 장의 사진, 일러스트, 포스터를 한번에 배치하기 위한 Unity 에셋입니다.
 
 사진 텍스처를 넣으면 액자가 사진의 가로세로 비율을 자동으로 맞춰 표시합니다. 사진마다 메쉬 크기를 직접 계산하거나, 

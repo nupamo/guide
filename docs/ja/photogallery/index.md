@@ -5,6 +5,10 @@ description: VRChatワールドに写真の額縁を簡単に配置するUnity�
 
 # AutoResize PhotoGallery
 
+<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  <iframe width="662" height="372" src="https://www.youtube.com/embed/TEa14lDnx6Q" title="AutoResize PhotoGallery Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);"></iframe>
+</div>
+
 AutoResize PhotoGalleryは、VRChatワールドに複数の写真、イラスト、ポスターを一度に配置するためのUnityアセットです。
 
 写真テクスチャを入れると、額縁が自動的に写真のアスペクト比に合わせて表示されます。写真ごとにメッシュのサイズを手動で計算したり、写真間の間隔を心配したりする必要はありません。

@@ -28,6 +28,7 @@ export default defineConfig({
               { text: '갤러리 배치 조정하기', link: '/photogallery/photo-gallery' },
               { text: '빌드 전에 확인하기', link: '/photogallery/build-and-upload' },
               { text: '문제 해결', link: '/photogallery/troubleshooting' },
+              { text: '이용 약관', link: '/photogallery/terms' },
             ]
           },
           {
@@ -65,6 +66,7 @@ export default defineConfig({
               { text: 'Adjust Layout', link: '/en/photogallery/photo-gallery' },
               { text: 'Check Before Build', link: '/en/photogallery/build-and-upload' },
               { text: 'Troubleshooting', link: '/en/photogallery/troubleshooting' },
+              { text: 'Terms of Use', link: '/en/photogallery/terms' },
             ]
           },
           {
@@ -102,6 +104,7 @@ export default defineConfig({
               { text: 'ギャラリーの配置調整', link: '/ja/photogallery/photo-gallery' },
               { text: 'ビルド前の確認', link: '/ja/photogallery/build-and-upload' },
               { text: 'トラブルシューティング', link: '/ja/photogallery/troubleshooting' },
+              { text: '利用規約', link: '/ja/photogallery/terms' },
             ]
           },
           {
