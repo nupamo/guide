@@ -20,9 +20,10 @@ Import the `.unitypackage` file downloaded from BOOTH into your Unity project.
 After importing, the main files are located in the `Assets/nupamo/AutoResize` folder.
 
 - `PhotoGallery.prefab`: The base gallery prefab for placing multiple photos.
-- `PhotoFrame.prefab`: The base frame prefab for displaying a single photo.
-- `Preset 1.mat`, `Preset 2.mat`: Ready-to-use frame material presets.
+- `PhotoFrame Pro.prefab`: A high-performance frame prefab including frame and glass effects.
+- `PhotoFrame Lite.prefab`: A lightweight frame prefab with only the photo and margins.
+- `Preset Lite.mat`, `Preset Opaque.mat`, `Preset Transparent.mat`: Ready-to-use material presets.
 - `Source`: Folder containing shaders, meshes, and default textures.
 - `Runtime`, `Editor`: Folders containing scripts required for the asset to function.
 
-General users mainly need to use `PhotoGallery.prefab`, `PhotoFrame.prefab`, and the `Preset` materials.
+General users mainly need to use `PhotoGallery.prefab`, `PhotoFrame` prefabs, and the `Preset` materials.

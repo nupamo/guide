@@ -20,9 +20,10 @@ BOOTH에서 받은 `.unitypackage` 파일을 Unity 프로젝트에 가져옵니�
 Import 후 기본 파일은 `Assets/nupamo/AutoResize` 폴더에 들어갑니다.
 
 - `PhotoGallery.prefab`: 여러 사진을 배치하기 위한 기본 갤러리 프리팹
-- `PhotoFrame.prefab`: 한 장의 사진을 표시하는 기본 액자 프리팹
-- `Preset 1.mat`, `Preset 2.mat`: 바로 사용할 수 있는 액자 머티리얼 프리셋
+- `PhotoFrame Pro.prefab`: 프레임, 유리 효과가 포함된 고기능 액자 프리팹
+- `PhotoFrame Lite.prefab`: 사진과 마진만 있는 가벼운 액자 프리팹
+- `Preset Lite.mat`, `Preset Opaque.mat`, `Preset Transparent.mat`: 바로 사용할 수 있는 머티리얼 프리셋
 - `Source`: 셰이더, 메쉬, 기본 텍스처가 들어 있는 폴더
 - `Runtime`, `Editor`: 에셋 동작에 필요한 스크립트 폴더
 
-일반 사용자는 `PhotoGallery.prefab`, `PhotoFrame.prefab`, `Preset` 머티리얼을 주로 사용하면 됩니다.
+일반 사용자는 `PhotoGallery.prefab`, `PhotoFrame` 프리팹, `Preset` 머티리얼을 주로 사용하면 됩니다.

@@ -27,8 +27,8 @@ The default `PhotoGallery.prefab` already has the `Photo Frame Prefab` and `Shar
 
 If they are empty, add them as follows:
 
-- `Photo Frame Prefab`: `Assets/nupamo/AutoResize/PhotoFrame.prefab`
-- `Shared Frame Material`: `Preset 1.mat` or your custom frame material
+- `Photo Frame Prefab`: `Assets/nupamo/AutoResize/PhotoFrame Pro.prefab`
+- `Shared Frame Material`: `Preset Opaque.mat` or your custom frame material
 
 ## 4. Adjust Layout
 

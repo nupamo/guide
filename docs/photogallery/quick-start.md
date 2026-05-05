@@ -27,8 +27,8 @@ Inspector의 `Photos` 리스트에 표시할 사진 텍스처를 넣습니다. �
 
 비어 있다면 아래처럼 넣어 주세요.
 
-- `Photo Frame Prefab`: `Assets/nupamo/AutoResize/PhotoFrame.prefab`
-- `Shared Frame Material`: `Preset 1.mat` 또는 직접 만든 액자 머티리얼
+- `Photo Frame Prefab`: `Assets/nupamo/AutoResize/PhotoFrame Pro.prefab`
+- `Shared Frame Material`: `Preset Opaque.mat` 또는 직접 만든 액자 머티리얼
 
 ## 4. 배치 조정
 

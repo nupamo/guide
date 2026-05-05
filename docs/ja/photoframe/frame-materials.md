@@ -9,12 +9,12 @@ description: ProとLiteシェーダーマテリアルの調整方法
 
 ## プリセットの複製
 
-1. Projectウィンドウで`Preset 1.mat`または`Preset 2.mat`を選択します。
+1. Projectウィンドウで`Preset Lite.mat`、`Preset Opaque.mat`、または`Preset Transparent.mat`を選択します。
 2. `Ctrl + D`で複製します。
 3. 複製したマテリアルの名前を任意の名前に変更します。
 4. マテリアルを適用します。
     - PhotoGallery: `PhotoGallery`の`Shared Frame Material`に新しいマテリアルを入れます。
-    - Shaderのみ使用: `PhotoFrame`プレハブの`Material`に新しいマテリアルを入れます。
+    - Shaderのみ使用: `PhotoFrame Pro`または`PhotoFrame Lite`プレハブの`Material`に新しいマテリアルを入れます。
 
 ## LiteとProの違い
 

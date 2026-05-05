@@ -27,8 +27,8 @@ Inspectorの`Photos`リストに、表示したい写真テクスチャを入れ
 
 空の場合は、以下のように設定してください。
 
-- `Photo Frame Prefab`: `Assets/nupamo/AutoResize/PhotoFrame.prefab`
-- `Shared Frame Material`: `Preset 1.mat`または自作の額縁マテリアル
+- `Photo Frame Prefab`: `Assets/nupamo/AutoResize/PhotoFrame Pro.prefab`
+- `Shared Frame Material`: `Preset Opaque.mat`または自作の額縁マテリアル
 
 ## 4. 配置の調整
 

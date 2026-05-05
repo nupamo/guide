@@ -20,9 +20,10 @@ BOOTHからダウンロードした`.unitypackage`ファイルをUnityプロジ�
 インポート後、基本ファイルは`Assets/nupamo/AutoResize`フォルダに入ります。
 
 - `PhotoGallery.prefab`: 複数の写真を配置するための基本ギャラリープレハブ
-- `PhotoFrame.prefab`: 1枚の写真を表示する基本額縁プレハブ
-- `Preset 1.mat`, `Preset 2.mat`: すぐに使用できる額縁マテリアルプリセット
-- `Source`: シェーダー、メッシュ、基本テクスチャが含まれるフォルダ
+- `PhotoFrame Pro.prefab`: フレーム、ガラス効果が含まれた高機能な額縁プレハブ
+- `PhotoFrame Lite.prefab`: 写真と余白のみの軽量な額縁プレハブ
+- `Preset Lite.mat`, `Preset Opaque.mat`, `Preset Transparent.mat`: すぐに使えるマテリアルプリセット
+- `Source`: シェーダー、メッシュ、基本テクスチャが入っているフォルダ
 - `Runtime`, `Editor`: アセットの動作に必要なスクリプトフォルダ
 
-一般ユーザーは、主に`PhotoGallery.prefab`、`PhotoFrame.prefab`、および`Preset`マテリアルを使用します。
+一般ユーザーは、主に`PhotoGallery.prefab`、`PhotoFrame` プレハブ、および`Preset`マテリアルを使用します。

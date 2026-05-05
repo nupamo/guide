@@ -9,12 +9,12 @@ The appearance of the frame is adjusted in the material. It is recommended to du
 
 ## Duplicating Presets
 
-1. Select `Preset 1.mat` or `Preset 2.mat` in the Project window.
+1. Select `Preset Lite.mat`, `Preset Opaque.mat`, or `Preset Transparent.mat` in the Project window.
 2. Duplicate it by pressing `Ctrl + D`.
 3. Rename the duplicated material to your desired name.
 4. Apply the material.
     - PhotoGallery: Put the new material in `Shared Frame Material` of `PhotoGallery`.
-    - Using only Shader: Put the new material in `Material` of the `PhotoFrame` prefab.
+    - Using only Shader: Put the new material in `Material` of the `PhotoFrame Pro` or `PhotoFrame Lite` prefab.
 
 ## Difference between Lite and Pro
 
