@@ -5,6 +5,8 @@ description: How to quickly place a photo gallery in the Scene
 
 # Create First Gallery
 
+![image](/photogallery.png)
+
 This page explains the fastest way to create a single photo gallery.
 
 ## 1. Place the PhotoGallery Prefab

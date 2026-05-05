@@ -5,6 +5,8 @@ description: Sceneに写真ギャラリーを素早く配置する方法
 
 # 最初のギャラリー作成
 
+![image](/photogallery.png)
+
 このページでは、写真ギャラリーを最も早く作成する方法を説明します。
 
 ## 1. PhotoGalleryプレハブの配置
