@@ -13,14 +13,16 @@ Tested with Unity `2022.3.6f1` and `2022.3.22f1`.
 
 ## Quick Start
 
+![image](/split.png)
+
 1. Make sure the project contains `Assets/nupamo/Split MMD Player`.
 2. Place the avatar you want to preview in the current scene. The avatar must have a Humanoid `Animator`.
-3. Open `Tools > nupamo > Split MMD Player`.
-4. Assign the scene avatar GameObject to `Source Avatar`.
+3. Select the avatar GameObjects in the Inspector, then open `Tools > nupamo > Split MMD Player`.
+4. Configure additional avatars in `Source Avatar`.
 5. Assign `Motion VMD`, `Audio Clip`, and optionally `Camera VMD` and `Lip VMD`.
 6. To use a stage or prop, assign a `.pmx` file to `PMX Prop`.
-7. For multiple characters, add dancers with `Add Dancer`.
-8. Click `Create Preview Scene`, then press Play in the generated scene.
+7. Click `Create Preview Scene`, then press Play in the generated scene.
+8. In the Game window, uncheck `Free Aspect - Low Resolution Aspect Ratio`.
 
 Only CC0 sample assets are included. Prepare your own song, motion, camera, and stage files as needed, place them under the project's `Assets` folder, then assign them in the window.
 

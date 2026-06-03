@@ -13,14 +13,16 @@ Unityバージョン`2022.3.6f1`、`2022.3.22f1`でテストされています�
 
 ## クイックスタート
 
+![image](/split.png)
+
 1. Unityプロジェクトに`Assets/nupamo/Split MMD Player`が入っていることを確認します。
 2. プレビューしたいアバターを現在のシーンに配置します。アバターにはHumanoidの`Animator`が必要です。
-3. `Tools > nupamo > Split MMD Player`を開きます。
-4. `Source Avatar`にシーン上のアバターGameObjectを入れます。
+3. InspectorでアバターGameObjectを選択し、`Tools > nupamo > Split MMD Player`を開きます。
+4. `Source Avatar`で追加のアバターを設定します。
 5. `Motion VMD`、`Audio Clip`、必要に応じて`Camera VMD`と`Lip VMD`を入れます。
 6. ステージや小物を使う場合は、`PMX Prop`に`.pmx`ファイルを入れます。
-7. 複数人で使う場合は、`Add Dancer`でDancerを追加します。
-8. `Create Preview Scene`を押し、生成されたシーンでPlayします。
+7. `Create Preview Scene`を押し、生成されたシーンでPlayします。
+8. Gameウィンドウの`Free Aspect - Low Resolution Aspect Ratio`チェックを外します。
 
 同梱されているのはCC0ライセンスのサンプルのみです。使いたい楽曲、モーション、カメラ、ステージのファイルは自分で用意し、プロジェクトの`Assets`配下に入れてから指定してください。
 

@@ -7,20 +7,22 @@ description: Split MMD Player는 VRChat 유저를 위한 Unity 기반 MMD 재생
 
 Split MMD Player는 VRChat 유저를 위한 Unity 기반 MMD 재생 도구입니다.
 3분할 카메라를 한 화면에 띄울 수 있으며, 아바타 제작 테스트 용도로도 사용할 수 있습니다.
-로컬로 사용하기 때문에 라이센스나 업로드 정책에 신경쓰지 않아도 됩니다.
+로컬로 사용하기 때문에 라이센스나 업로드 정책을 신경쓰지 않아도 됩니다.
 
 Unity 버전 `2022.3.6f1`, `2022.3.22f1`에서 테스트되었습니다.
 
-## 퀵스타트
+## Quick Start
+
+![image](/split.png)
 
 1. Unity 프로젝트에 `Assets/nupamo/Split MMD Player`가 들어있는지 확인합니다.
 2. 프리뷰할 아바타를 현재 씬에 배치합니다. 아바타에는 Humanoid `Animator`가 필요합니다.
-3. 메뉴에서 `Tools > nupamo > Split MMD Player`를 엽니다.
-4. `Source Avatar`에 씬의 아바타 GameObject를 넣습니다.
+3. Inspector에서 아바타 GameObject들을 선택하고 메뉴에서 `Tools > nupamo > Split MMD Player`를 엽니다.
+4. `Source Avatar`에서 아바타들을 추가로 설정합니다.
 5. `Motion VMD`, `Audio Clip`, 필요하면 `Camera VMD`와 `Lip VMD`를 넣습니다.
 6. 스테이지나 소품을 쓰려면 `PMX Prop`에 `.pmx` 파일을 넣습니다.
-7. 여러 명을 쓰려면 `Add Dancer`로 Dancer를 추가합니다.
-8. `Create Preview Scene`을 누르고 생성된 씬에서 Play합니다.
+7. `Create Preview Scene`을 누르고 생성된 씬에서 Play합니다.
+8. Game 창의 `Free Aspect - Low Resolution Aspect Ratio` 체크를 해제합니다.
 
 기본 샘플은 CC0 라이선스 샘플만 들어 있습니다. 원하는 곡, 모션, 카메라, 스테이지 파일은 직접 찾아서 프로젝트의 `Assets` 아래에 넣은 뒤 사용해 주세요.
 
