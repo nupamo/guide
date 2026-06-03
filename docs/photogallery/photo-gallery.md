@@ -43,6 +43,14 @@ description: PhotoGallery 컴포넌트의 주요 옵션 설명
 
 사진을 벽면에 넓게 펼치고 싶으면 `Horizontal`, 세로로 긴 전시 형태가 필요하면 `Vertical`을 사용해 보세요.
 
+## Expand Direction
+
+사진이 늘어날 때 `PhotoGallery` 오브젝트의 현재 위치를 기준으로 어느 방향으로 확장할지 정합니다.
+
+- `Center`: 기존처럼 전체 갤러리가 가운데 정렬됩니다.
+- `Expand Right`: 첫 번째 열을 현재 위치에 두고 오른쪽으로 늘어납니다.
+- `Expand Left`: 첫 번째 열을 현재 위치에 두고 왼쪽으로 늘어납니다.
+
 ## Frame Position / Rotation / Scale
 
 각 슬롯 안에 들어가는 `PhotoFrame`의 위치, 회전, 크기입니다.

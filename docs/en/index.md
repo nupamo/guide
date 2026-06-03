@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "nupamo"
   text: "Asset & Shader Docs"
-  tagline: "Guide for tools that make VRChat world creation easier and faster."
+  tagline: "Guide for tools that make VRChat content creation easier and faster."
   actions:
     - theme: brand
       text: Get Started with PhotoGallery
@@ -12,6 +12,9 @@ hero:
     - theme: alt
       text: Configure PhotoFrame
       link: /en/photoframe/frame-materials
+    - theme: alt
+      text: View Split MMD Player
+      link: /en/split-mmd-player/
 
 features:
   - title: AutoResize PhotoGallery
@@ -20,7 +23,7 @@ features:
   - title: AutoResize PhotoFrame
     details: Dedicated shader guide for high-quality picture frame effects. Design your own frames with glass reflection, 3D frames, and margin settings.
     icon: 🎨
-  - title: Easy Integration
-    details: Works without additional Udon scripts and is optimized during the build phase, making it usable not only in VRChat worlds but also in various Unity projects.
-    icon: ⚡
+  - title: Split MMD Player
+    details: A Unity-based MMD playback tool for VRChat users. Display a three-way split camera view and use it locally for avatar testing.
+    icon: 🎬
 ---

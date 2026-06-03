@@ -218,6 +218,14 @@ Pro 머티리얼에서만 보입니다.
 
 대부분의 경우 켜 두는 것을 권장합니다.
 
+### Auto Resize Image Only
+
+Auto Resize가 이미지 영역에만 적용되도록 합니다.
+
+끄면 기존처럼 사진 비율에 맞춰 프레임 전체 크기가 자동으로 줄어듭니다.
+
+켜면 프레임은 오브젝트 전체를 채우고, 사진만 비율에 맞게 표시됩니다. 사진 비율과 프레임 비율이 맞지 않아 남는 공간은 `Margin Color`와 `Margin Texture`로 채워집니다.
+
 ### Set ratio
 
 `Aspect ratio from texture`를 끈 경우 직접 사용할 비율입니다.

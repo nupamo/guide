@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "nupamo"
   text: "Asset & Shader Docs"
-  tagline: "VRChat 월드 제작을 더욱 쉽고 빠르게 만들어주는 도구들의 가이드입니다."
+  tagline: "VRChat 컨텐츠 제작을 더욱 쉽고 빠르게 만들어주는 도구들의 가이드입니다."
   actions:
     - theme: brand
       text: PhotoGallery 시작하기
@@ -12,6 +12,9 @@ hero:
     - theme: alt
       text: PhotoFrame 설정하기
       link: /photoframe/frame-materials
+    - theme: alt
+      text: Split MMD Player 보기
+      link: /split-mmd-player/
 
 features:
   - title: AutoResize PhotoGallery
@@ -20,7 +23,7 @@ features:
   - title: AutoResize PhotoFrame
     details: 고퀄리티 액자 효과를 위한 전용 셰이더 가이드입니다. 유리 반사, 입체적인 프레임, 마진 설정을 통해 나만의 액자를 디자인해보세요.
     icon: 🎨
-  - title: Easy Integration
-    details: 별도의 Udon 스크립트 없이도 작동하며, 빌드 단계에서 최적화가 이루어져 VRChat 월드뿐만 아니라 다양한 유니티 프로젝트에서 사용 가능합니다.
-    icon: ⚡
+  - title: Split MMD Player
+    details: VRChat 유저를 위한 Unity 기반 MMD 재생 도구입니다. 3분할 카메라를 한 화면에 띄우고 로컬에서 아바타 제작 테스트에도 사용할 수 있습니다.
+    icon: 🎬
 ---
