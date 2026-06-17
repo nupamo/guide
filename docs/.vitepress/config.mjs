@@ -59,7 +59,10 @@ export default defineConfig({
           },
           {
             text: 'Split MMD Player',
-            items: [{ text: '가이드', link: '/split-mmd-player/' }],
+            items: [
+              { text: '가이드', link: '/split-mmd-player/' },
+              { text: '변경 이력', link: '/split-mmd-player/changelog' },
+            ],
           },
         ],
       },
@@ -126,7 +129,10 @@ export default defineConfig({
           },
           {
             text: 'Split MMD Player',
-            items: [{ text: 'Guide', link: '/en/split-mmd-player/' }],
+            items: [
+              { text: 'Guide', link: '/en/split-mmd-player/' },
+              { text: 'Changelog', link: '/en/split-mmd-player/changelog' },
+            ],
           },
         ],
       },
@@ -196,7 +202,10 @@ export default defineConfig({
           },
           {
             text: 'Split MMD Player',
-            items: [{ text: 'ガイド', link: '/ja/split-mmd-player/' }],
+            items: [
+              { text: 'ガイド', link: '/ja/split-mmd-player/' },
+              { text: '変更履歴', link: '/ja/split-mmd-player/changelog' },
+            ],
           },
         ],
       },

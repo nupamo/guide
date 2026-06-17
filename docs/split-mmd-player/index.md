@@ -9,7 +9,24 @@ Split MMD Player는 VRChat 유저를 위한 Unity 기반 MMD 재생 도구입니
 3분할 카메라를 한 화면에 띄울 수 있으며, 아바타 제작 테스트 용도로도 사용할 수 있습니다.
 로컬로 사용하기 때문에 라이센스나 업로드 정책을 신경쓰지 않아도 됩니다.
 
-Unity 버전 `2022.3.6f1`, `2022.3.22f1`에서 테스트되었습니다.
+<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  <iframe width="662" height="372" src="https://www.youtube.com/embed/LiA346I-l3M" title="AutoResize PhotoGallery Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);"></iframe>
+</div>
+
+## Studio 버전
+
+Studio 버전은 단순 재생이 아닌 VRChat 아바타에 설정한 옵션들을 그대로 사용하기 위한 목적으로 추가 개발되었습니다.  
+Gesture Manager를 통해 Modular Avatar기반 옷장 토글, SPS, Light limit 등을 그대로 사용할 수 있습니다.(물론 미리 세팅되어있다는 전제 하에)
+
+추가로 Studio에서는 VMD 모션뿐 아니라 Unity `AnimationClip` 모션도 사용할 수 있습니다.
+Play Mode 중 모션을 바꾸거나 파라미터를 조정할 수 있으며, 변경한 파라미터는 Play Mode가 끝난 뒤에도 유지됩니다.
+여러 Player 컴포넌트를 만들면 Play Mode 중에 곡을 변경할 수 있으며, Dancer와 Audio 컴포넌트가 공유되고, Dancer Transform Offset으로 댄서별 위치와 회전도 보정할 수 있습니다.
+
+3가지 환경에서 테스트되었습니다. 더 오래된 환경에서의 동작은 보장하지 않습니다. 고장난다면 관련 패키지들을 최신으로 업데이트 해주세요.
+
+- (2026-06-16 기준 모두 최신) Unity `2022.3.22f1` / VRChat SDK `3.10.3` / Gesture Manager `3.9.8` / VRCFury `1.1341.0` / Modular Avatar `1.17.1` / NDMF `1.13.1` / wholesome SPS Configurator `2.0.11`
+- Unity `2022.3.22f1` / VRChat SDK `3.10.0` / Gesture Manager `3.9.6` / VRCFury `1.1272.0` / Modular Avatar `1.14.3` / NDMF `1.9.4` / wholesome SPS Configurator `2.0.11`
+- Unity `2022.3.6f1` / VRChat SDK `3.10.1` / Gesture Manager `3.9.7` / VRCFury `1.1279.0` / Modular Avatar `1.12.5` / NDMF `1.7.10` / wholesome SPS Configurator `2.0.11`
 
 ## Quick Start
 
@@ -19,7 +36,7 @@ Unity 버전 `2022.3.6f1`, `2022.3.22f1`에서 테스트되었습니다.
 2. 프리뷰할 아바타를 현재 씬에 배치합니다. 아바타에는 Humanoid `Animator`가 필요합니다.
 3. Inspector에서 아바타 GameObject들을 선택하고 메뉴에서 `Tools > nupamo > Split MMD Player`를 엽니다.
 4. `Source Avatar`에서 아바타들을 추가로 설정합니다.
-5. `Motion VMD`, `Audio Clip`, 필요하면 `Camera VMD`와 `Lip VMD`를 넣습니다.
+5. `Motion VMD` 또는 Unity `AnimationClip`, `Audio Clip`, 필요하면 `Camera VMD`와 `Lip VMD`를 넣습니다.
 6. 스테이지나 소품을 쓰려면 `PMX Prop`에 `.pmx` 파일을 넣습니다.
 7. `Create Preview Scene`을 누르고 생성된 씬에서 Play합니다.
 8. Game 창의 `Free Aspect - Low Resolution Aspect Ratio` 체크를 해제합니다.
@@ -49,7 +66,9 @@ Unity 버전 `2022.3.6f1`, `2022.3.22f1`에서 테스트되었습니다.
 - `Name`: Dancer 표시 이름입니다.
 - `Animator`: Dancer로 사용할 Humanoid Animator입니다.
 - `Motion VMD`: Dancer의 모션 VMD 파일입니다.
+- `Animation Clip`: Dancer의 Unity AnimationClip 모션입니다.
 - `Lip VMD`: Dancer의 립싱크용 VMD 파일입니다. (없으면 Motion VMD를 사용합니다)
+- `Audio Clip`: 모션과 함께 재생할 오디오입니다.
 
 ### Views
 
@@ -71,6 +90,7 @@ Unity 버전 `2022.3.6f1`, `2022.3.22f1`에서 테스트되었습니다.
 - `Copy Foot IK Rotation`: 발 IK 회전 복사 여부입니다.
 - `Motion Scale`: 모션 이동량 스케일입니다.
 - `Camera Scale`: 카메라 이동량 스케일입니다.
+- `Dancer Transform Offset`: Dancer별 위치, 회전, 크기 보정값입니다.
 
 ### Runtime Cameras
 
