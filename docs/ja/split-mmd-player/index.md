@@ -21,10 +21,11 @@ Gesture Managerを通して、Modular Avatarベースの衣装切り替え、SPS
 さらにStudioでは、VMDモーションだけでなくUnity `AnimationClip`モーションも再生できます。
 Play Mode中にモーションを変更したりパラメーターを調整したりでき、変更したパラメーターはPlay Mode終了後も保持されます。
 複数のPlayerコンポーネントを作成すると、Play Mode中に曲を変更できます。DancerとAudioコンポーネントは共有され、Dancer Transform OffsetでDancerごとの位置や回転も補正できます。
+Builderのステージ設定はSceneベースで動作し、Day/Night Presetで基本の雰囲気をすばやく選択できます。
 
 次の3つの環境でテストされています。より古い環境での動作は保証しません。壊れる場合は、関連パッケージを最新に更新してください。
 
-- (2026-06-16時点ですべて最新) Unity `2022.3.22f1` / VRChat SDK `3.10.3` / Gesture Manager `3.9.8` / VRCFury `1.1341.0` / Modular Avatar `1.17.1` / NDMF `1.13.1` / wholesome SPS Configurator `2.0.11`
+- (2026-06-20時点ですべて最新) Unity `2022.3.22f1` / VRChat SDK `3.10.4` / Gesture Manager `3.9.8` / VRCFury `1.1341.0` / Modular Avatar `1.17.1` / NDMF `1.13.1` / wholesome SPS Configurator `2.0.11`
 - Unity `2022.3.22f1` / VRChat SDK `3.10.0` / Gesture Manager `3.9.6` / VRCFury `1.1272.0` / Modular Avatar `1.14.3` / NDMF `1.9.4` / wholesome SPS Configurator `2.0.11`
 - Unity `2022.3.6f1` / VRChat SDK `3.10.1` / Gesture Manager `3.9.7` / VRCFury `1.1279.0` / Modular Avatar `1.12.5` / NDMF `1.7.10` / wholesome SPS Configurator `2.0.11`
 
@@ -35,13 +36,15 @@ Play Mode中にモーションを変更したりパラメーターを調整し�
 1. Unityプロジェクトに`Assets/nupamo/Split MMD Player`が入っていることを確認します。
 2. プレビューしたいアバターを現在のシーンに配置します。アバターにはHumanoidの`Animator`が必要です。
 3. InspectorでアバターGameObjectを選択し、`Tools > nupamo > Split MMD Player`を開きます。
-4. `Source Avatar`で追加のアバターを設定します。
-5. `Motion VMD`またはUnity `AnimationClip`、`Audio Clip`、必要に応じて`Camera VMD`と`Lip VMD`を入れます。
-6. ステージや小物を使う場合は、`PMX Prop`に`.pmx`ファイルを入れます。
-7. `Create Preview Scene`を押し、生成されたシーンでPlayします。
-8. Gameウィンドウの`Free Aspect - Low Resolution Aspect Ratio`チェックを外します。
+4. `Scene Name`に生成するプレビューシーン名を入力します。
+5. `Camera VMD`、`Audio Clip`、必要に応じて`Post Process Profile`を指定します。
+6. `Stage Preset`で`Day`または`Night`を選び、`Stage Scene`に使用するステージSceneを指定します。
+7. PMX小物を追加する場合は`Add PMX Prop`を押し、`PMX Prop`スロットに`.pmx`ファイルを入れます。
+8. 各Dancerの`Source Avatar`を確認し、`Motion Animation`または`Motion VMD`を指定します。
+9. Play Modeを終了した状態で`Create Preview Scene`を押し、生成されたシーンでPlayします。
+10. Gameウィンドウの`Free Aspect - Low Resolution Aspect Ratio`チェックを外します。
 
-同梱されているのはCC0ライセンスのサンプルのみです。使いたい楽曲、モーション、カメラ、ステージのファイルは自分で用意し、プロジェクトの`Assets`配下に入れてから指定してください。
+同梱されているのはCC0ライセンスのサンプルのみです。使いたい楽曲、モーション、カメラ、ステージSceneファイルは自分で用意し、プロジェクトの`Assets`配下に入れてから指定してください。
 
 ## Create Preview Sceneで行われること
 
@@ -52,10 +55,9 @@ Play Mode中にモーションを変更したりパラメーターを調整し�
 - 選択したアバターをプレビューシーンへ複製します。
 - 複製したアバターをNDMFで一度処理し、プレビュー用に焼き込みます。
 - VRChatアップロード用コンポーネント、Modular Avatar/NDMF、VRCFury、Marshmallow PBなど、プレビューの妨げになるビルド用コンポーネントを複製から削除します。
-- 指定したVMD、オーディオ、PMX Propのパスをコンポーネントに設定します。
-- 読み込まれたPMX PropとBakeされたアセットを`GeneratedAssets`配下に生成します。
+- 読み込まれたSceneとBakeされたアセットを`GeneratedAssets`配下に生成します。
 
-元のシーン上のアバターは変更されません。既存のプレビューシーンがある場合は上書きされ、`GeneratedAssets`も作り直されます。
+元のシーン上のアバターは変更されません。既存のプレビューシーンがある場合は確認してから上書きされ、`GeneratedAssets`も作り直されます。
 
 ## コンポーネントオプション
 

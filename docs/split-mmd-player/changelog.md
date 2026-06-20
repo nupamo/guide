@@ -5,6 +5,14 @@ description: Split MMD Player의 버전별 변경 이력입니다.
 
 # 변경 이력
 
+## Studio v1.2.0 (2026-06-20)
+
+- feat: Builder에서 Stage Prefab 삭제, Scene으로 대체
+- feat: Day, Night Preset 추가
+- fix: 새로운 Scene이 만들어지지 않고 기존 Scene 데이터를 없애버리는 문제 수정, 덮어쓰는 경우 확인절차 추가
+- fix: 아래 시야에서 거울바닥이 렌더링되지 않도록 수정
+- fix: Runtime UI의 Hide 옵션이 저장되도록 수정
+
 ## Studio v1.1.0 (2026-06-17)
 
 - feat: Gesture Manager와 SPS를 지원합니다.
