@@ -13,6 +13,11 @@ Split MMD PlayerはVRChatユーザー向けのUnityベースMMD再生ツール�
   <iframe width="662" height="372" src="https://www.youtube.com/embed/LiA346I-l3M" title="AutoResize PhotoGallery Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);"></iframe>
 </div>
 
+## Free版
+
+Free版は、Unity再生時に問題になる可能性があるVRChatコンポーネントを削除したSceneを生成します。
+VMD、PMXファイルに対応していますが、Unity向けの追加機能は含まれていません。
+
 ## Studio版
 
 Studio版は、単なる再生ではなく、VRChatアバターに設定したオプションをそのまま使うことを目的として追加開発されました。
@@ -21,11 +26,11 @@ Gesture Managerを通して、Modular Avatarベースの衣装切り替え、SPS
 さらにStudioでは、VMDモーションだけでなくUnity `AnimationClip`モーションも再生できます。
 Play Mode中にモーションを変更したりパラメーターを調整したりでき、変更したパラメーターはPlay Mode終了後も保持されます。
 複数のPlayerコンポーネントを作成すると、Play Mode中に曲を変更できます。DancerとAudioコンポーネントは共有され、Dancer Transform OffsetでDancerごとの位置や回転も補正できます。
-Builderのステージ設定はSceneベースで動作し、Day/Night Presetで基本の雰囲気をすばやく選択できます。
+Builderのステージ設定はSceneベースで動作し、Day/Night/Summer Presetで基本の雰囲気をすばやく選択できます。
 
 次の3つの環境でテストされています。より古い環境での動作は保証しません。壊れる場合は、関連パッケージを最新に更新してください。
 
-- (2026-06-20時点ですべて最新) Unity `2022.3.22f1` / VRChat SDK `3.10.4` / Gesture Manager `3.9.8` / VRCFury `1.1341.0` / Modular Avatar `1.17.1` / NDMF `1.13.1` / wholesome SPS Configurator `2.0.11`
+- 2026-07-05時点の最新環境: Unity `2022.3.22f1` / VRChat SDK `3.10.4` / Gesture Manager `3.9.8` / VRCFury `1.1348.0` / Modular Avatar `1.17.1` / NDMF `1.17.1` / wholesome SPS Configurator `2.0.11`
 - Unity `2022.3.22f1` / VRChat SDK `3.10.0` / Gesture Manager `3.9.6` / VRCFury `1.1272.0` / Modular Avatar `1.14.3` / NDMF `1.9.4` / wholesome SPS Configurator `2.0.11`
 - Unity `2022.3.6f1` / VRChat SDK `3.10.1` / Gesture Manager `3.9.7` / VRCFury `1.1279.0` / Modular Avatar `1.12.5` / NDMF `1.7.10` / wholesome SPS Configurator `2.0.11`
 
@@ -58,56 +63,3 @@ Builderのステージ設定はSceneベースで動作し、Day/Night Presetで�
 - 読み込まれたSceneとBakeされたアセットを`GeneratedAssets`配下に生成します。
 
 元のシーン上のアバターは変更されません。既存のプレビューシーンがある場合は確認してから上書きされ、`GeneratedAssets`も作り直されます。
-
-## コンポーネントオプション
-
-### Inputs
-
-- `Camera VMD`: MMDカメラのVMDファイルです。
-- `Dancers`: 再生に使うDancer一覧です。
-- `Name`: Dancerの表示名です。
-- `Animator`: Dancerとして使うHumanoid Animatorです。
-- `Motion VMD`: DancerのモーションVMDファイルです。
-- `Animation Clip`: DancerのUnity AnimationClipモーションです。
-- `Lip VMD`: リップシンク用のVMDファイルです。ない場合はMotion VMDを使用します。
-- `Audio Clip`: モーションと一緒に再生するオーディオです。
-
-### Views
-
-- `Active`: そのViewを有効にするかどうかです。
-- `Type`: Viewのカメラタイプです。
-- `Target Character`: Follow/Orthographic Viewの対象Dancerです。
-
-### Playback
-
-- `Play On Start`: Play開始時に自動再生するかどうかです。
-- `Loop`: ループ再生するかどうかです。
-- `Start Time`: 再生開始時間です。End Timeより後の場合は静止モーションになります。
-- `End Time`: 再生終了時間です。`-1`で無効化します。
-- `Motion Time Offset`: 音声基準のモーション時間補正値です。
-
-### VMD Retargeting
-
-- `Enable Foot IK`: 足IKを適用するかどうかです。
-- `Copy Foot IK Rotation`: 足IKの回転をコピーするかどうかです。
-- `Motion Scale`: モーション移動量のスケールです。
-- `Camera Scale`: カメラ移動量のスケールです。
-- `Dancer Transform Offset`: Dancerごとの位置、回転、スケール補正値です。
-
-### Runtime Cameras
-
-- `Show Runtime UI`: ランタイムカメラUIを表示するかどうかです。
-- `Field Of View`: Followカメラの視野角です。
-- `Position Smooth Time`: Followカメラ位置の補間時間です。
-- `Front Distance`: Front Viewの距離です。
-- `Front Height Offset`: Front Viewの高さオフセットです。
-- `Front Angle`: Front Viewの角度オフセットです。
-- `Back Distance`: Back Viewの距離です。
-- `Back Height Offset`: Back Viewの高さオフセットです。
-- `Back Angle`: Back Viewの角度オフセットです。
-
-### Orthographic Preset
-
-- `Height Offset`: 正投影Viewの高さオフセットです。
-- `Angle`: 正投影Viewの角度オフセットです。
-- `Size`: 正投影カメラサイズです。

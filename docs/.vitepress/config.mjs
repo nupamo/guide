@@ -61,6 +61,8 @@ export default defineConfig({
             text: 'Split MMD Player',
             items: [
               { text: '가이드', link: '/split-mmd-player/' },
+              { text: '옵션', link: '/split-mmd-player/option' },
+              { text: '키보드 조작', link: '/split-mmd-player/keyboard' },
               { text: '변경 이력', link: '/split-mmd-player/changelog' },
             ],
           },
@@ -131,6 +133,11 @@ export default defineConfig({
             text: 'Split MMD Player',
             items: [
               { text: 'Guide', link: '/en/split-mmd-player/' },
+              { text: 'Options', link: '/en/split-mmd-player/option' },
+              {
+                text: 'Keyboard Controls',
+                link: '/en/split-mmd-player/keyboard',
+              },
               { text: 'Changelog', link: '/en/split-mmd-player/changelog' },
             ],
           },
@@ -204,6 +211,11 @@ export default defineConfig({
             text: 'Split MMD Player',
             items: [
               { text: 'ガイド', link: '/ja/split-mmd-player/' },
+              { text: 'オプション', link: '/ja/split-mmd-player/option' },
+              {
+                text: 'キーボード操作',
+                link: '/ja/split-mmd-player/keyboard',
+              },
               { text: '変更履歴', link: '/ja/split-mmd-player/changelog' },
             ],
           },

@@ -5,6 +5,12 @@ description: Version history for Split MMD Player.
 
 # Changelog
 
+## Studio v1.3.0 (2026-07-05)
+
+- feat: Added 3D Mode.
+- feat: Added keyboard controls.
+- feat: Added Summer Preset.
+
 ## Studio v1.2.0 (2026-06-20)
 
 - feat: Scene Builder now uses Scene assets instead of Stage Prefabs.

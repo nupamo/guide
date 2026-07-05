@@ -13,6 +13,11 @@ Because it is used locally, you do not need to worry about license or upload pol
   <iframe width="662" height="372" src="https://www.youtube.com/embed/LiA346I-l3M" title="AutoResize PhotoGallery Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);"></iframe>
 </div>
 
+## Free Version
+
+The Free version creates a Scene with VRChat components removed to avoid issues during Unity playback.
+It supports VMD and PMX files, but does not include Unity-specific extra features.
+
 ## Studio Version
 
 The Studio version was additionally developed to use the options configured on VRChat avatars as-is, rather than only playing motions.
@@ -21,11 +26,11 @@ Through Gesture Manager, you can use Modular Avatar-based wardrobe toggles, SPS,
 In addition, Studio can play Unity `AnimationClip` motions as well as VMD motions.
 You can change motions and adjust parameters during Play Mode, and changed parameters are remembered after leaving Play Mode.
 By creating multiple Player components, you can change songs during Play Mode. Dancer and Audio components are shared, and Dancer Transform Offset can be used to adjust each dancer's position and rotation.
-Builder stage settings are Scene-based, and the Day/Night presets let you quickly choose the default atmosphere.
+Builder stage settings are Scene-based, and the Day/Night/Summer presets let you quickly choose the default atmosphere.
 
 It has been tested in the following three environments. Behavior in older environments is not guaranteed. If something breaks, please update the related packages to the latest versions.
 
-- (Latest as of 2026-06-20) Unity `2022.3.22f1` / VRChat SDK `3.10.4` / Gesture Manager `3.9.8` / VRCFury `1.1341.0` / Modular Avatar `1.17.1` / NDMF `1.13.1` / wholesome SPS Configurator `2.0.11`
+- Latest as of 2026-07-05: Unity `2022.3.22f1` / VRChat SDK `3.10.4` / Gesture Manager `3.9.8` / VRCFury `1.1348.0` / Modular Avatar `1.17.1` / NDMF `1.17.1` / wholesome SPS Configurator `2.0.11`
 - Unity `2022.3.22f1` / VRChat SDK `3.10.0` / Gesture Manager `3.9.6` / VRCFury `1.1272.0` / Modular Avatar `1.14.3` / NDMF `1.9.4` / wholesome SPS Configurator `2.0.11`
 - Unity `2022.3.6f1` / VRChat SDK `3.10.1` / Gesture Manager `3.9.7` / VRCFury `1.1279.0` / Modular Avatar `1.12.5` / NDMF `1.7.10` / wholesome SPS Configurator `2.0.11`
 
@@ -58,56 +63,3 @@ During creation, it:
 - Generates loaded Scene and baked assets under `GeneratedAssets`.
 
 The original avatars in your scene are not modified. If the preview scene already exists, it asks for confirmation before overwriting it, and `GeneratedAssets` is rebuilt.
-
-## Component Options
-
-### Inputs
-
-- `Camera VMD`: MMD camera VMD file.
-- `Dancers`: List of dancers used for playback.
-- `Name`: Display name for the dancer.
-- `Animator`: Humanoid Animator used as the dancer.
-- `Motion VMD`: Motion VMD file for the dancer.
-- `Animation Clip`: Unity AnimationClip motion for the dancer.
-- `Lip VMD`: VMD file used for lip sync. If empty, Motion VMD is used.
-- `Audio Clip`: Audio played with the motion.
-
-### Views
-
-- `Active`: Whether the view is enabled.
-- `Type`: Camera type for the view.
-- `Target Character`: Dancer targeted by Follow/Orthographic views.
-
-### Playback
-
-- `Play On Start`: Whether playback starts automatically on Play.
-- `Loop`: Whether playback repeats.
-- `Start Time`: Playback start time. If it is after End Time, the motion stays still.
-- `End Time`: Playback end time. Set to `-1` to disable.
-- `Motion Time Offset`: Motion timing offset against audio.
-
-### VMD Retargeting
-
-- `Enable Foot IK`: Whether foot IK is applied.
-- `Copy Foot IK Rotation`: Whether foot IK rotation is copied.
-- `Motion Scale`: Scale for motion translation.
-- `Camera Scale`: Scale for camera translation.
-- `Dancer Transform Offset`: Per-dancer position, rotation, and scale offset.
-
-### Runtime Cameras
-
-- `Show Runtime UI`: Whether the runtime camera UI is shown.
-- `Field Of View`: Field of view for Follow cameras.
-- `Position Smooth Time`: Position smoothing time for Follow cameras.
-- `Front Distance`: Distance for the Front view.
-- `Front Height Offset`: Height offset for the Front view.
-- `Front Angle`: Angle offset for the Front view.
-- `Back Distance`: Distance for the Back view.
-- `Back Height Offset`: Height offset for the Back view.
-- `Back Angle`: Angle offset for the Back view.
-
-### Orthographic Preset
-
-- `Height Offset`: Height offset for the Orthographic view.
-- `Angle`: Angle offset for the Orthographic view.
-- `Size`: Orthographic camera size.

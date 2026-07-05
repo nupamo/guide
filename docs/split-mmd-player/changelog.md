@@ -5,6 +5,12 @@ description: Split MMD Player의 버전별 변경 이력입니다.
 
 # 변경 이력
 
+## Studio v1.3.0 (2026-07-05)
+
+- feat: 3D 모드 추가
+- feat: 키보드 컨트롤 추가
+- feat: Summer Preset 추가
+
 ## Studio v1.2.0 (2026-06-20)
 
 - feat: Builder에서 Stage Prefab 삭제, Scene으로 대체
