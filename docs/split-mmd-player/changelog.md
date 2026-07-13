@@ -5,6 +5,10 @@ description: Split MMD Player의 버전별 변경 이력입니다.
 
 # 변경 이력
 
+## Studio v1.4.0 (2026-07-14)
+
+- feat: Tools/nupamo/Split MMD Recorder 추가
+
 ## Studio v1.3.0 (2026-07-05)
 
 - feat: 3D 모드 추가

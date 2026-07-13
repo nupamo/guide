@@ -5,6 +5,10 @@ description: Version history for Split MMD Player.
 
 # Changelog
 
+## Studio v1.4.0 (2026-07-14)
+
+- feat: Added Tools/nupamo/Split MMD Recorder.
+
 ## Studio v1.3.0 (2026-07-05)
 
 - feat: Added 3D Mode.
