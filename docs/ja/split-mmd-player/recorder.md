@@ -14,4 +14,4 @@ Split MMD Recorderの機能説明です。
 - `Quality`: 品質
 - `Output Size`: 動画の解像度
 - `FPS`: 動画のフレームレート
-- `FFmpeg`: 動画のエンコードに使用するffmpegを選択します。選択しない場合はPNGのみ抽出されます。
+- `FFmpeg`: 動画のエンコードに使用する[FFmpeg](https://ffmpeg.org/download.html)を選択します。選択しない場合はPNGのみ抽出されます。

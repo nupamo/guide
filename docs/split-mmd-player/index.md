@@ -34,6 +34,11 @@ Builder의 스테이지 설정은 Scene 기반으로 동작하며, Day/Night/Sum
 - Unity `2022.3.22f1` / VRChat SDK `3.10.0` / Gesture Manager `3.9.6` / VRCFury `1.1272.0` / Modular Avatar `1.14.3` / NDMF `1.9.4` / wholesome SPS Configurator `2.0.11`
 - Unity `2022.3.6f1` / VRChat SDK `3.10.1` / Gesture Manager `3.9.7` / VRCFury `1.1279.0` / Modular Avatar `1.12.5` / NDMF `1.7.10` / wholesome SPS Configurator `2.0.11`
 
+## Split MMD Recorder
+
+Normal, SBS, VR180 방식의 녹화를 지원합니다. 해당 기능을 사용하면 일관된 프레임으로 모니터보다 큰 해상도를 촬영할 수 있습니다.  
+단 이미지 추출만 지원하며, 동영상 인코딩까지 진행하려면 [FFmpeg](https://ffmpeg.org/download.html) 설치가 필요합니다.
+
 ## Quick Start
 
 ![image](/split.png)

@@ -34,6 +34,11 @@ Builderのステージ設定はSceneベースで動作し、Day/Night/Summer Pre
 - Unity `2022.3.22f1` / VRChat SDK `3.10.0` / Gesture Manager `3.9.6` / VRCFury `1.1272.0` / Modular Avatar `1.14.3` / NDMF `1.9.4` / wholesome SPS Configurator `2.0.11`
 - Unity `2022.3.6f1` / VRChat SDK `3.10.1` / Gesture Manager `3.9.7` / VRCFury `1.1279.0` / Modular Avatar `1.12.5` / NDMF `1.7.10` / wholesome SPS Configurator `2.0.11`
 
+## Split MMD Recorder
+
+Normal、SBS、VR180方式の録画に対応しています。この機能を使うと、モニターより大きな解像度でも一貫したフレームで撮影できます。
+画像の抽出のみ対応しているため、動画へのエンコードまで行う場合は[FFmpeg](https://ffmpeg.org/download.html)のインストールが必要です。
+
 ## クイックスタート
 
 ![image](/split.png)

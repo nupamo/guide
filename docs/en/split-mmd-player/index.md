@@ -34,6 +34,11 @@ It has been tested in the following three environments. Behavior in older enviro
 - Unity `2022.3.22f1` / VRChat SDK `3.10.0` / Gesture Manager `3.9.6` / VRCFury `1.1272.0` / Modular Avatar `1.14.3` / NDMF `1.9.4` / wholesome SPS Configurator `2.0.11`
 - Unity `2022.3.6f1` / VRChat SDK `3.10.1` / Gesture Manager `3.9.7` / VRCFury `1.1279.0` / Modular Avatar `1.12.5` / NDMF `1.7.10` / wholesome SPS Configurator `2.0.11`
 
+## Split MMD Recorder
+
+Supports recording in Normal, SBS, and VR180 modes. This feature lets you capture frames at resolutions larger than your monitor with consistent framing.
+It only extracts images; installing [FFmpeg](https://ffmpeg.org/download.html) is required if you also want to encode them into a video.
+
 ## Quick Start
 
 ![image](/split.png)

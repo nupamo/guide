@@ -14,4 +14,4 @@ Split MMD Recorder의 기능 설명입니다.
 - `Quality`: 품질
 - `Output Size`: 영상 해상도
 - `FPS`: 영상 주사율
-- `FFmpeg`: 영상 인코딩에 사용할 ffmpeg를 선택합니다. 선택하지 않으면 png만 추출됩니다.
+- `FFmpeg`: 영상 인코딩에 사용할 [FFmpeg](https://ffmpeg.org/download.html)를 선택합니다. 선택하지 않으면 png만 추출됩니다.

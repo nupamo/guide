@@ -14,4 +14,4 @@ Split MMD Recorder provides recording features.
 - `Quality`: Quality
 - `Output Size`: Video resolution
 - `FPS`: Video frame rate
-- `FFmpeg`: Select ffmpeg to use for video encoding. If not selected, only PNG files are extracted.
+- `FFmpeg`: Select [FFmpeg](https://ffmpeg.org/download.html) to use for video encoding. If not selected, only PNG files are extracted.
