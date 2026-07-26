@@ -38,7 +38,7 @@ Split MMD Player의 기능 설명입니다.
   - `3D Strength`: 양쪽 눈의 거리 강도입니다.
   - `Letterbox`: 캐릭터가 앞으로 나와보이게 하는 레터박스의 크기를 설정합니다.
 - `Remember Parameter Changes`: Play중에 바꾼 옵션을 초기화하지 않고 다음 재생에도 사용합니다.
-- `Show Runtime UI`: Play 화면 속에 카메라 설정 UI를 표시합니다.
+- `Show Runtime UI`: Play 화면 속에 재생 컨트롤 및 카메라 설정 UI를 표시합니다.
 
 ### Inputs
 

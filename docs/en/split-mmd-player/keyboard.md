@@ -9,15 +9,21 @@ This page explains Split MMD Player keyboard controls. Controls are applied to t
 
 ![image](/keyboard.png)
 
-- W,S: Zoom in/out
-- A,D: Move left/right
-- Space,C: Move up/down
-- Q,E: Rotate left/right
-- X,Z: Rotate up/down
-- R: Reset
+## Playback
 
----
+- `J`,`L` (`←`,`→`): Seek backward/forward by 5 seconds
+- `K`: Pause/resume playback
+- `,`,`.`: Step backward/forward by 1 frame
+- `Shift + ,`, `Shift + .`: Change playback speed by 0.25x
 
-- Tab: Change camera type
-- 0~9: Change target dancer
-- F1~F8: Change player
+## Camera
+
+- `W`,`S`: Zoom in/out
+- `A`,`D`: Move left/right
+- `Space`,`C`: Move up/down
+- `Q`,`E`: Rotate left/right
+- `X`,`Z`: Rotate up/down
+- `R`: Reset
+- `Tab`: Change camera type
+- `0`~`9`: Change target dancer
+- `F1`~`F8`: Change player

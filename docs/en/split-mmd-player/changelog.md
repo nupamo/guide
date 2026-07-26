@@ -5,6 +5,11 @@ description: Version history for Split MMD Player.
 
 # Changelog
 
+## Studio v1.5.0 (2026-07-26)
+
+- feat: Added runtime playback controls.
+- feat: Added playback keyboard shortcuts.
+
 ## Studio v1.4.0 (2026-07-14)
 
 - feat: Added Tools/nupamo/Split MMD Recorder.

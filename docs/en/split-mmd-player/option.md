@@ -38,7 +38,7 @@ Feature reference for Split MMD Player.
   - `3D Strength`: Distance strength between the two eyes.
   - `Letterbox`: Sets the letterbox size that makes the character appear to come forward.
 - `Remember Parameter Changes`: Keeps options changed during Play instead of resetting them for the next playback.
-- `Show Runtime UI`: Shows the camera settings UI in the Play screen.
+- `Show Runtime UI`: Shows the playback controls and camera settings UI in the Play screen.
 
 ### Inputs
 

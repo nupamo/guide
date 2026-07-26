@@ -5,6 +5,11 @@ description: Split MMD Player의 버전별 변경 이력입니다.
 
 # 변경 이력
 
+## Studio v1.5.0 (2026-07-26)
+
+- feat: Runtime 재생 컨트롤 추가
+- feat: 재생 관련 키보드 단축키 추가
+
 ## Studio v1.4.0 (2026-07-14)
 
 - feat: Tools/nupamo/Split MMD Recorder 추가
