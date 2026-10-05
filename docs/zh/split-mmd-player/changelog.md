@@ -7,10 +7,10 @@ description: Split MMD Player 各版本的更新记录。
 
 ## Studio v1.6.0 (2026-10-05)
 
+- feat: 从 YouTube 链接加载音频和歌词
+- feat: 添加 JIZURA（实验性功能）
 - feat: 添加歌曲与舞台预设
-- feat: 添加通过 YouTube 链接获取歌曲信息的功能
 - feat: 添加 Editor UI 翻译
-- feat: 添加实验性 JIZURA 功能
 - fix: 修复开始播放和跳转时同步偏移的问题
 
 ## Studio v1.5.0 (2026-07-26)

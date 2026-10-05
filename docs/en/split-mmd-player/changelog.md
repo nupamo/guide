@@ -7,10 +7,10 @@ description: Version history for Split MMD Player.
 
 ## Studio v1.6.0 (2026-10-05)
 
+- feat: Audio and lyrics loaded from YouTube links
+- feat: JIZURA (experimental)
 - feat: Song and stage presets
-- feat: Song information imported from YouTube links
 - feat: Editor UI translations
-- feat: Experimental JIZURA
 - fix: Synchronization issues when starting playback or seeking
 
 ## Studio v1.5.0 (2026-07-26)

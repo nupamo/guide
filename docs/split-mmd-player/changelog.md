@@ -7,10 +7,10 @@ description: Split MMD Player의 버전별 변경 이력입니다.
 
 ## Studio v1.6.0 (2026-10-05)
 
+- feat: YouTube 링크에서 음원과 가사 불러오기
+- feat: JIZURA 추가 (실험적 기능)
 - feat: 곡·스테이지 프리셋 추가
-- feat: YouTube 링크를 통해 곡 정보 불러오는 기능 추가
 - feat: Editor UI 번역 추가
-- feat: (실험적 기능) JIZURA 추가
 - fix: 재생 시작과 seek 변경 싱크가 어긋나는 문제 수정
 
 ## Studio v1.5.0 (2026-07-26)
