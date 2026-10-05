@@ -5,45 +5,53 @@ description: Split MMD Playerのバージョン別変更履歴です。
 
 # 変更履歴
 
+## Studio v1.6.0 (2026-10-05)
+
+- feat: 曲・ステージプリセット追加
+- feat: YouTubeリンクから曲情報を読み込む機能追加
+- feat: Editor UIの翻訳追加
+- feat: 実験的なJIZURAを追加
+- fix: 再生開始時・シーク時に同期がずれる問題を修正
+
 ## Studio v1.5.0 (2026-07-26)
 
-- feat: Runtime再生コントロールを追加
-- feat: 再生関連のキーボードショートカットを追加
+- feat: Runtime再生コントロール追加
+- feat: 再生ショートカット追加
 
 ## Studio v1.4.0 (2026-07-14)
 
-- feat: Tools/nupamo/Split MMD Recorderを追加
+- feat: Split MMD Recorder追加
 
 ## Studio v1.3.0 (2026-07-05)
 
 - feat: 3Dモード追加
 - feat: キーボード操作追加
-- feat: Summer Preset追加
+- feat: Summerプリセット追加
 
 ## Studio v1.2.0 (2026-06-20)
 
-- feat: BuilderのStage Prefabを削除、Sceneに置き換え
-- feat: Day/Night Preset追加
-- fix: 新しいSceneが作成されず既存のSceneデータが消えてしまう問題を修正、上書き時の確認手順を追加
-- fix: 下方向の視点でミラーフロアがレンダリングされないよう修正
-- fix: Runtime UIのHideオプションが保存されるよう修正
+- feat: Stage PrefabをSceneに置換
+- feat: Day・Nightプリセット追加
+- fix: 既存シーンのデータ消失を修正
+- fix: シーン上書きの確認を追加
+- fix: 下方向の視点でミラーフロアを非表示
+- fix: Runtime UIのHide設定を保存
 
 ## Studio v1.1.0 (2026-06-17)
 
-- feat: Gesture ManagerとSPSに対応
-- feat: Post Processとデフォルトプロファイルに対応
-- feat: Unity `AnimationClip`モーションに対応
-- feat: Play Modeで変更したパラメーターを記憶
-- feat: 複数のPlayerコンポーネントでDancerとAudioコンポーネントを共有可能に変更
-- feat: Dancer Transform Offsetに対応
-- feat: Play Mode中のモーション変更に対応
-- feat: デフォルトステージをMirror floorとSakura petalに変更
-- feat: デフォルトモーションと曲を変更
-- fix: 使用していないDancerを非表示に修正
+- feat: Gesture Manager・SPS対応
+- feat: ポストプロセッシング・標準プロファイル対応
+- feat: Unity AnimationClipモーション対応
+- feat: Play Modeのパラメーターを保持
+- feat: Dancer・Audioコンポーネント共有
+- feat: Dancer Transform Offset対応
+- feat: Play Mode中のモーション変更対応
+- change: 標準ステージ・モーション・曲を変更
+- fix: 未使用Dancerを非表示
 
 ## v1.0.1 (2026-06-11)
 
-- fix: VMD Cameraの補間を修正
+- fix: VMDカメラ補間を修正
 
 ## v1.0.0 (2026-06-03)
 

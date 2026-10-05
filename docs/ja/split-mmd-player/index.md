@@ -7,10 +7,10 @@ description: Split MMD PlayerはVRChatユーザー向けのUnityベースMMD再�
 
 Split MMD PlayerはVRChatユーザー向けのUnityベースMMD再生ツールです。
 3分割カメラを1つの画面に表示でき、アバター制作のテスト用途にも使用できます。
-ローカルで使用するため、ライセンスやアップロードポリシーを気にせず使えます。
+Unity Editorでローカル再生するため、VRChatワールドにアップロードせずに確認できます。
 
 <div style="display: flex; justify-content: center; margin: 2rem 0;">
-  <iframe width="662" height="372" src="https://www.youtube.com/embed/LiA346I-l3M" title="AutoResize PhotoGallery Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);"></iframe>
+  <iframe width="662" height="372" src="https://www.youtube.com/embed/LiA346I-l3M" title="Split MMD Player Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);"></iframe>
 </div>
 
 ## Free版
@@ -19,6 +19,8 @@ Free版は、Unity再生時に問題になる可能性があるVRChatコンポ�
 VMD、PMXファイルに対応していますが、Unity向けの追加機能は含まれていません。
 
 ## Studio版
+
+**Studio v1.6.0**はYouTube音声、[プリセット](./presets)、[字幕](./captions)に対応します。JIZURAは実験的機能です。
 
 Studio版は、単なる再生ではなく、VRChatアバターに設定したオプションをそのまま使うことを目的として追加開発されました。
 Gesture Managerを通して、Modular Avatarベースの衣装切り替え、SPS、Light limitなどをそのまま使用できます。もちろん、事前に設定されていることが前提です。
@@ -37,28 +39,43 @@ Builderのステージ設定はSceneベースで動作し、Day/Night/Summer Pre
 ## Split MMD Recorder
 
 Normal、SBS、VR180方式の録画に対応しています。この機能を使うと、モニターより大きな解像度でも一貫したフレームで撮影できます。
-画像の抽出のみ対応しているため、動画へのエンコードまで行う場合は[FFmpeg](https://ffmpeg.org/download.html)のインストールが必要です。
+PNG連番とFFmpegによるMP4エンコードに対応します。Windowsでは必要なFFmpegを自動で用意します。手順は[Recorder](./recorder)を参照してください。
+
+## Editorメニュー
+
+`Tools > nupamo > Split MMD Player`から開きます。
+
+| メニュー | 用途 |
+| --- | --- |
+| Create Scene | プリセット、アバター、ステージからプレビューシーンを作成 |
+| Song Presets | [曲プリセット](./presets#song-presets)の追加・編集・適用 |
+| Stage Presets | [ステージプリセット](./presets#stage-presets)の追加・編集 |
+| Recorder | [PNG連番とMP4の録画](./recorder) |
+| Setting | FFmpegとyt-dlpを1つの設定ウィンドウで管理 |
+| Language | Editor UIをEnglish / 日本語 / 한국어 / 中文に変更 |
 
 ## クイックスタート
 
-![image](/split.png)
+このガイドのフィールド・ボタン名は英語UIに合わせています。
 
-1. Unityプロジェクトに`Assets/nupamo/Split MMD Player`が入っていることを確認します。
-2. プレビューしたいアバターを現在のシーンに配置します。アバターにはHumanoidの`Animator`が必要です。
-3. InspectorでアバターGameObjectを選択し、`Tools > nupamo > Split MMD Player`を開きます。
-4. `Scene Name`に生成するプレビューシーン名を入力します。
-5. `Camera VMD`、`Audio Clip`、必要に応じて`Post Process Profile`を指定します。
-6. `Stage Preset`で`Day`または`Night`を選び、`Stage Scene`に使用するステージSceneを指定します。
-7. PMX小物を追加する場合は`Add PMX Prop`を押し、`PMX Prop`スロットに`.pmx`ファイルを入れます。
-8. 各Dancerの`Source Avatar`を確認し、`Motion Animation`または`Motion VMD`を指定します。
-9. Play Modeを終了した状態で`Create Preview Scene`を押し、生成されたシーンでPlayします。
-10. Gameウィンドウの`Free Aspect - Low Resolution Aspect Ratio`チェックを外します。
+1. Humanoidのプレビュー用アバターを現在のシーンに配置し、選択します。
+2. `Tools > nupamo > Split MMD Player > Create Scene`を開きます。
+3. 上部の曲・ステージ[プリセット](./presets)を押すか、音声・モーション・ステージを直接指定します。
+4. `Scene Name`と各Dancerの`Source Avatar`を確認します。モーションのスロットは直接変更できます。
+5. Play Modeを終了して`Create Preview Scene`を押し、生成したシーンでPlayします。
+6. YouTube音声は準備完了を待ちます。字幕はPlayerの`Inputs > Captions`で選択します。
 
-同梱されているのはCC0ライセンスのサンプルのみです。使いたい楽曲、モーション、カメラ、ステージSceneファイルは自分で用意し、プロジェクトの`Assets`配下に入れてから指定してください。
+`Motion Time Offset`はCreate SceneのInputsの最後にあります。
+
+Gameウィンドウで`Low Resolution Aspect Ratios`をオフにすると、鮮明なプレビューになります。下の画像は旧バージョンのメニュー位置とGameウィンドウの解像度設定の例です。
+
+![Gameウィンドウの解像度設定例](/split.png)
+
+同梱サンプルはCC0ライセンスです。追加のモーション、カメラ、ステージファイルはプロジェクトの`Assets`配下に入れてから指定してください。
 
 ## Create Preview Sceneで行われること
 
-`Assets/nupamo/Split MMD Player/Split MMD Player.unity`にプレビューシーンが作成され、自動で開かれます。
+`Scene Name`に応じて`Assets/nupamo/Split MMD Player/<Scene Name>.unity`にプレビューシーンを作成し、自動で開きます。デフォルト名は`Split MMD Player`です。
 
 作成時には次の処理が行われます。
 
@@ -67,4 +84,4 @@ Normal、SBS、VR180方式の録画に対応しています。この機能を使
 - VRChatアップロード用コンポーネント、Modular Avatar/NDMF、VRCFury、Marshmallow PBなど、プレビューの妨げになるビルド用コンポーネントを複製から削除します。
 - 読み込まれたSceneとBakeされたアセットを`GeneratedAssets`配下に生成します。
 
-元のシーン上のアバターは変更されません。既存のプレビューシーンがある場合は確認してから上書きされ、`GeneratedAssets`も作り直されます。
+元のシーン上のアバターは変更されません。既存のプレビューシーンがある場合は確認してから上書きされ、そのシーンの生成アセットは`GeneratedAssets/<Scene Name>`で管理します。

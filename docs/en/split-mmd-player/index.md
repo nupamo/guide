@@ -7,10 +7,10 @@ description: Split MMD Player is a Unity-based MMD playback tool for VRChat user
 
 Split MMD Player is a Unity-based MMD playback tool for VRChat users.
 It can show a three-way split camera view on one screen, and it can also be used for avatar production testing.
-Because it is used locally, you do not need to worry about license or upload policy issues.
+Play locally in the Unity Editor to preview your avatars without uploading a VRChat world.
 
 <div style="display: flex; justify-content: center; margin: 2rem 0;">
-  <iframe width="662" height="372" src="https://www.youtube.com/embed/LiA346I-l3M" title="AutoResize PhotoGallery Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);"></iframe>
+  <iframe width="662" height="372" src="https://www.youtube.com/embed/LiA346I-l3M" title="Split MMD Player Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);"></iframe>
 </div>
 
 ## Free Version
@@ -19,6 +19,8 @@ The Free version creates a Scene with VRChat components removed to avoid issues 
 It supports VMD and PMX files, but does not include Unity-specific extra features.
 
 ## Studio Version
+
+**Studio v1.6.0** adds YouTube audio, [presets](./presets), and [captions](./captions). JIZURA is experimental.
 
 The Studio version was additionally developed to use the options configured on VRChat avatars as-is, rather than only playing motions.
 Through Gesture Manager, you can use Modular Avatar-based wardrobe toggles, SPS, Light limit, and similar features as they are, assuming they are already configured on the avatar.
@@ -37,28 +39,43 @@ It has been tested in the following three environments. Behavior in older enviro
 ## Split MMD Recorder
 
 Supports recording in Normal, SBS, and VR180 modes. This feature lets you capture frames at resolutions larger than your monitor with consistent framing.
-It only extracts images; installing [FFmpeg](https://ffmpeg.org/download.html) is required if you also want to encode them into a video.
+Capture PNG sequences and encode MP4 videos with FFmpeg. On Windows, missing FFmpeg is prepared automatically. See [Recorder](./recorder) for the steps.
+
+## Editor menu
+
+Open `Tools > nupamo > Split MMD Player`.
+
+| Menu | Purpose |
+| --- | --- |
+| Create Scene | Create a preview scene from presets, avatars and a stage |
+| Song Presets | Add, edit and apply [song presets](./presets#song-presets) |
+| Stage Presets | Add and edit [stage presets](./presets#stage-presets) |
+| Recorder | [Record PNG sequences and MP4 videos](./recorder) |
+| Setting | Manage FFmpeg and yt-dlp in one settings window |
+| Language | Choose English / 日本語 / 한국어 / 中文 for the Editor UI |
 
 ## Quick Start
 
-![image](/split.png)
+Field and button names in this guide use the English UI.
 
-1. Make sure the project contains `Assets/nupamo/Split MMD Player`.
-2. Place the avatar you want to preview in the current scene. The avatar must have a Humanoid `Animator`.
-3. Select the avatar GameObjects in the Inspector, then open `Tools > nupamo > Split MMD Player`.
-4. Enter the preview scene name in `Scene Name`.
-5. Assign `Camera VMD`, `Audio Clip`, and optionally `Post Process Profile`.
-6. Choose `Day` or `Night` in `Stage Preset`, then assign the stage scene to `Stage Scene`.
-7. To add PMX props, click `Add PMX Prop`, then assign `.pmx` files to the `PMX Prop` slots.
-8. Check each dancer's `Source Avatar`, then assign `Motion Animation` or `Motion VMD`.
-9. Exit Play Mode, click `Create Preview Scene`, then press Play in the generated scene.
-10. In the Game window, uncheck `Free Aspect - Low Resolution Aspect Ratio`.
+1. Place and select your Humanoid preview avatars in the current scene.
+2. Open `Tools > nupamo > Split MMD Player > Create Scene`.
+3. Click the song and stage [preset](./presets) buttons at the top, or assign audio, motion and stage directly.
+4. Check `Scene Name` and each dancer's `Source Avatar`. Motion slots remain editable.
+5. Exit Play Mode, click `Create Preview Scene`, then press Play in the generated scene.
+6. Wait for YouTube audio preparation. Choose captions in the Player's `Inputs > Captions`.
 
-Only CC0 sample assets are included. Prepare your own song, motion, camera, and stage Scene files as needed, place them under the project's `Assets` folder, then assign them in the window.
+`Motion Time Offset` is the last Inputs field in Create Scene.
+
+Disable `Low Resolution Aspect Ratios` in the Game window for a sharper preview. The image below shows the previous version's menu location and Game window resolution settings.
+
+![Game window resolution settings](/split.png)
+
+Only CC0 sample assets are included. Place additional motion, camera and stage files under the project's `Assets` folder before assigning them.
 
 ## What Create Preview Scene Does
 
-The preview scene is created at `Assets/nupamo/Split MMD Player/Split MMD Player.unity` and opened automatically.
+The preview scene is created at `Assets/nupamo/Split MMD Player/<Scene Name>.unity` and opened automatically. The default name is `Split MMD Player`.
 
 During creation, it:
 
@@ -67,4 +84,4 @@ During creation, it:
 - Removes preview-blocking build/upload components from the clones, such as VRChat upload components, Modular Avatar/NDMF, VRCFury, and Marshmallow PB.
 - Generates loaded Scene and baked assets under `GeneratedAssets`.
 
-The original avatars in your scene are not modified. If the preview scene already exists, it asks for confirmation before overwriting it, and `GeneratedAssets` is rebuilt.
+The original avatars in your scene are not modified. If the preview scene already exists, it asks for confirmation before overwriting it, and generated assets for that scene are stored under `GeneratedAssets/<Scene Name>`.

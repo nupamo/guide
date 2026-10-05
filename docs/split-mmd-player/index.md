@@ -7,10 +7,10 @@ description: Split MMD Player는 VRChat 유저를 위한 Unity 기반 MMD 재생
 
 Split MMD Player는 VRChat 유저를 위한 Unity 기반 MMD 재생 도구입니다.
 3분할 카메라를 한 화면에 띄울 수 있으며, 아바타 제작 테스트 용도로도 사용할 수 있습니다.
-로컬로 사용하기 때문에 라이센스나 업로드 정책을 신경쓰지 않아도 됩니다.
+Unity Editor에서 로컬로 재생하므로 VRChat 월드에 업로드하지 않고 확인할 수 있습니다.
 
 <div style="display: flex; justify-content: center; margin: 2rem 0;">
-  <iframe width="662" height="372" src="https://www.youtube.com/embed/LiA346I-l3M" title="AutoResize PhotoGallery Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);"></iframe>
+  <iframe width="662" height="372" src="https://www.youtube.com/embed/LiA346I-l3M" title="Split MMD Player Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);"></iframe>
 </div>
 
 ## Free 버전
@@ -19,6 +19,8 @@ Free 버전은 Unity 재생 시 문제가 생길 수 있는 VRChat 컴포넌트�
 VMD, PMX 파일을 지원하지만 Unity 추가 기능은 포함되어 있지 않습니다.
 
 ## Studio 버전
+
+**Studio v1.6.0**은 YouTube 오디오, [프리셋](./presets), [자막](./captions)을 지원합니다. JIZURA는 실험적 기능입니다.
 
 Studio 버전은 단순 재생이 아닌 VRChat 아바타에 설정한 옵션들을 그대로 사용하기 위한 목적으로 추가 개발되었습니다.  
 Gesture Manager를 통해 Modular Avatar기반 옷장 토글, SPS, Light limit 등을 그대로 사용할 수 있습니다.(물론 미리 세팅되어있다는 전제 하에)
@@ -37,28 +39,43 @@ Builder의 스테이지 설정은 Scene 기반으로 동작하며, Day/Night/Sum
 ## Split MMD Recorder
 
 Normal, SBS, VR180 방식의 녹화를 지원합니다. 해당 기능을 사용하면 일관된 프레임으로 모니터보다 큰 해상도를 촬영할 수 있습니다.  
-단 이미지 추출만 지원하며, 동영상 인코딩까지 진행하려면 [FFmpeg](https://ffmpeg.org/download.html) 설치가 필요합니다.
+PNG 시퀀스와 FFmpeg를 이용한 MP4 인코딩을 지원합니다. Windows에서는 필요한 FFmpeg를 자동으로 준비합니다. 자세한 순서는 [Recorder](./recorder)를 참고하세요.
+
+## Editor 메뉴
+
+`Tools > nupamo > Split MMD Player`에 다음 메뉴가 있습니다.
+
+| 메뉴 | 용도 |
+| --- | --- |
+| Create Scene | 프리셋과 아바타·스테이지로 프리뷰 씬 생성 |
+| Song Presets | [곡 프리셋](./presets#song-presets) 추가·편집·적용 |
+| Stage Presets | [스테이지 프리셋](./presets#stage-presets) 추가·편집 |
+| Recorder | [PNG 시퀀스와 MP4 녹화](./recorder) |
+| Setting | FFmpeg와 yt-dlp를 하나의 설정 창에서 관리 |
+| Language | Editor UI를 English / 日本語 / 한국어 / 中文으로 변경 |
 
 ## Quick Start
 
-![image](/split.png)
+이 문서의 필드·버튼 이름은 영어 UI 기준입니다.
 
-1. Unity 프로젝트에 `Assets/nupamo/Split MMD Player`가 들어있는지 확인합니다.
-2. 프리뷰할 아바타를 현재 씬에 배치합니다. 아바타에는 Humanoid `Animator`가 필요합니다.
-3. Inspector에서 아바타 GameObject들을 선택하고 메뉴에서 `Tools > nupamo > Split MMD Player`를 엽니다.
-4. `Scene Name`에 생성할 프리뷰 씬 이름을 입력합니다.
-5. `Camera VMD`, `Audio Clip`, 필요하면 `Post Process Profile`을 지정합니다.
-6. `Stage Preset`에서 `Day` 또는 `Night`를 고르고, `Stage Scene`에 사용할 스테이지 Scene을 지정합니다.
-7. PMX 소품을 추가하려면 `Add PMX Prop`을 누르고 `PMX Prop` 슬롯에 `.pmx` 파일을 넣습니다.
-8. 각 Dancer의 `Source Avatar`를 확인하고, `Motion Animation` 또는 `Motion VMD`를 지정합니다.
-9. Play Mode를 종료한 상태에서 `Create Preview Scene`을 누르고 생성된 씬에서 Play합니다.
-10. Game 창의 `Free Aspect - Low Resolution Aspect Ratio` 체크를 해제합니다.
+1. 프리뷰할 Humanoid 아바타를 현재 씬에 배치하고 선택합니다.
+2. `Tools > nupamo > Split MMD Player > Create Scene`을 엽니다.
+3. 맨 위에서 곡·스테이지 [프리셋](./presets) 버튼을 누르거나, 오디오·모션·스테이지를 직접 지정합니다.
+4. `Scene Name`과 각 Dancer의 `Source Avatar`를 확인합니다. 모션 슬롯은 직접 수정할 수 있습니다.
+5. Play Mode를 종료하고 `Create Preview Scene`을 누른 뒤 생성된 씬에서 Play합니다.
+6. YouTube 오디오는 준비 완료를 기다립니다. 자막은 Player의 `Inputs > Captions`에서 선택합니다.
 
-기본 샘플은 CC0 라이선스 샘플만 들어 있습니다. 원하는 곡, 모션, 카메라, 스테이지 Scene 파일은 직접 찾아서 프로젝트의 `Assets` 아래에 넣은 뒤 사용해 주세요.
+`Motion Time Offset`은 Create Scene의 Inputs 마지막에 있습니다.
+
+Game 창에서 `Low Resolution Aspect Ratios`를 해제하면 선명한 프리뷰를 볼 수 있습니다. 아래 이미지는 이전 버전의 메뉴 위치와 Game 창 해상도 설정 예시입니다.
+
+![Game 창의 해상도 설정 예시](/split.png)
+
+기본 샘플은 CC0 라이선스 샘플만 들어 있습니다. 추가 모션, 카메라, 스테이지 파일은 프로젝트의 `Assets` 아래에 넣고 지정하세요.
 
 ## Create Preview Scene을 누르면
 
-`Assets/nupamo/Split MMD Player/Split MMD Player.unity` 프리뷰 씬이 만들어지고 자동으로 열립니다.
+`Scene Name`에 따라 `Assets/nupamo/Split MMD Player/<Scene Name>.unity`에 프리뷰 씬이 만들어지고 자동으로 열립니다. 기본 이름은 `Split MMD Player`입니다.
 
 생성 과정에서는 다음 작업이 일어납니다.
 
@@ -67,4 +84,4 @@ Normal, SBS, VR180 방식의 녹화를 지원합니다. 해당 기능을 사용�
 - VRChat 업로드용 컴포넌트, Modular Avatar/NDMF, VRCFury, Marshmallow PB처럼 프리뷰에 방해되는 빌드용 컴포넌트를 복제본에서 제거합니다.
 - 로드된 Scene 및 Bake된 에셋들을 `GeneratedAssets` 아래에 생성합니다.
 
-원본 씬의 아바타는 수정하지 않습니다. 기존 프리뷰 씬이 있으면 확인 후 덮어쓰고, `GeneratedAssets`도 다시 생성됩니다.
+원본 씬의 아바타는 수정하지 않습니다. 기존 프리뷰 씬이 있으면 확인 후 덮어쓰고, 해당 씬의 생성 에셋은 `GeneratedAssets/<Scene Name>`에서 관리합니다.
