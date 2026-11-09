@@ -46,9 +46,16 @@ How it plays when the instance first opens.
 - `Manual` (default): no sound until someone turns the handle.
 - `Auto`: the first song repeats on its own.
 
+### Sound
+
+How far the music box can be heard. This is set only in the Inspector, not on the in-world screen.
+
+- `Around the box (3D)` (default): the sound comes from the box and gets quieter with distance.
+- `Whole world (2D)`: everyone in the world hears it at the same level.
+
 ### Songs
 
-Built-in songs that are always in the list. Each has a title and a Mabinogi MML score (up to 6,000 characters).
+Built-in songs that are always in the list. Each has a title and an MML score (up to 6,000 characters; Mabinogi syntax works too).
 
 - Add with `+ Add song`, move up with `▲`, delete with `✕`.
 - Three public-domain songs are included by default (Satie Gymnopédie No.1, Satie Je te veux, Debussy Clair de lune).

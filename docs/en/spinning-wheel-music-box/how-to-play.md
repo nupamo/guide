@@ -35,7 +35,7 @@ Tap `+ Add score` under the list.
 ### Paste MML
 
 1. Choose the `MML` tab.
-2. Paste a Mabinogi MML score. Multiple tracks can stay separated by `,` as usual. (Up to 6 tracks, 6,000 characters)
+2. Paste an MML score, with tracks separated by `,`. Mabinogi MML (`MML@...;`) works as is. (Up to 6 tracks, 6,000 characters)
 3. If you like, type a name in the `Song name (optional)` field at the bottom. You can leave it empty.
 4. Press `Add & play`. The song goes to the top of the list and starts playing.
 
@@ -52,7 +52,7 @@ Tap `+ Add score` under the list.
 
 ## Saving
 
-- Songs you make are saved to your VRChat data. They are still in the list when you come back to the same world.
+- Songs you make are saved to the world data. They are still in the list when you come back to the same world.
 - You can save up to **10 songs**. When you are full, you will be asked to delete an old song with `×` before adding a new one.
 - The list combines the songs saved by everyone currently in the instance. The same song shows up as one row.
 - When someone leaves, songs only they had leave the list too. Tap their name to save songs you like to your own list.

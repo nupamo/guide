@@ -30,6 +30,6 @@ features:
     details: Dedicated shader guide for high-quality picture frame effects. Design your own frames with glass reflection, 3D frames, and margin settings.
     icon: 🎨
   - title: Spinning Wheel Music Box
-    details: A hand-cranked paper-strip music box. Paste an MML score or punch one while a YouTube song plays, and everyone in the instance hears the same song.
+    details: A hand-cranked paper-score music box. Paste an MML score or punch one while a YouTube song plays, and everyone in the instance hears the same song.
     icon: 🎵
 ---

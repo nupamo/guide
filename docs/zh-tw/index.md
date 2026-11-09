@@ -30,6 +30,6 @@ features:
     details: 用於製作高品質相框效果的專用著色器指南。透過玻璃反射、立體邊框和留白設定，設計您自己的相框。
     icon: 🎨
   - title: 紡車音樂盒 (Spinning Wheel Music Box)
-    details: 手搖紙帶音樂盒。貼上 MML 樂譜，或一邊聽 YouTube 歌曲一邊打孔製作樂譜，實例中的所有人一起聽同一首曲子。
+    details: 手搖紙樂譜音樂盒。貼上 MML 樂譜，或一邊聽 YouTube 歌曲一邊打孔製作樂譜，實例中的所有人一起聽同一首曲子。
     icon: 🎵
 ---

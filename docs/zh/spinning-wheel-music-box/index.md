@@ -1,11 +1,11 @@
 ---
 title: 纺车八音盒
-description: 手摇纸带八音盒「纺车八音盒（Spinning Wheel Music Box）」指南
+description: 手摇纸乐谱八音盒「纺车八音盒（Spinning Wheel Music Box）」指南
 ---
 
 # 纺车八音盒 (Spinning Wheel Music Box)
 
-纺车八音盒是一款可以放进 VRChat 世界的手摇纸带八音盒。
+纺车八音盒是一款可以放进 VRChat 世界的手摇纸乐谱八音盒。
 
 纸质乐谱绕在一个像纺车一样的轮子上，转一圈就演奏一遍。纸上打出的孔每碰到一次音梳，就会响起一个音。
 摇柄转得越快，曲子就越快；松开手，它会像真正的八音盒一样慢慢停下来。
@@ -13,9 +13,9 @@ description: 手摇纸带八音盒「纺车八音盒（Spinning Wheel Music Box�
 ## 可以做什么
 
 - 抓住摇柄亲手转动演奏（手动），或让它自动循环播放（自动）
-- 粘贴洛奇（Mabinogi）MML 乐谱立即演奏（最多 6 轨、6000 字符）
+- 粘贴 MML 乐谱立即演奏（最多 6 轨、6000 字符，也支持洛奇 MML）
 - 粘贴 YouTube 链接，一边听歌一边在纸上打孔制作乐谱（仅限 PC）
-- 把做好的曲子保存到 VRChat 数据中，下次来也能再听（每人最多 10 首）
+- 把做好的曲子保存到世界数据中，下次来也能再听（每人最多 10 首）
 - 在同一个列表里一起听实例中所有人保存的曲子
 - 切换 4 种音色（八音盒、马林巴、钢琴、击弦古钢琴）
 
@@ -27,3 +27,11 @@ description: 手摇纸带八音盒「纺车八音盒（Spinning Wheel Music Box�
 2. [安装到世界](./installation.md)：面向世界制作者的安装与设置。
 
 遇到问题时，请查看 [故障排除](./troubleshooting.md)。
+
+## 获取
+
+正在准备上架 BOOTH。上架后会出现在下面的店铺中。
+
+- 店铺：[nupamo.booth.pm](https://nupamo.booth.pm/)
+
+<a href="https://nupamo.booth.pm/"><img src="/booth-qr.png" alt="QR: nupamo.booth.pm" width="160"></a>
