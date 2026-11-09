@@ -15,6 +15,9 @@ hero:
     - theme: alt
       text: Configure PhotoFrame
       link: /en/photoframe/frame-materials
+    - theme: alt
+      text: View Spinning Wheel Music Box
+      link: /en/spinning-wheel-music-box/
 
 features:
   - title: Split MMD Player
@@ -26,4 +29,7 @@ features:
   - title: AutoResize PhotoFrame
     details: Dedicated shader guide for high-quality picture frame effects. Design your own frames with glass reflection, 3D frames, and margin settings.
     icon: 🎨
+  - title: Spinning Wheel Music Box
+    details: A hand-cranked paper-strip music box. Paste an MML score or punch one while a YouTube song plays, and everyone in the instance hears the same song.
+    icon: 🎵
 ---

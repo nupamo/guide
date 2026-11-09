@@ -15,6 +15,9 @@ hero:
     - theme: alt
       text: 设置 PhotoFrame
       link: /zh/photoframe/frame-materials
+    - theme: alt
+      text: 查看纺车八音盒
+      link: /zh/spinning-wheel-music-box/
 
 features:
   - title: Split MMD Player
@@ -26,4 +29,7 @@ features:
   - title: AutoResize PhotoFrame
     details: 用于制作高品质相框效果的专用着色器指南。通过玻璃反射、立体边框和留白设置，设计您自己的相框。
     icon: 🎨
+  - title: 纺车八音盒 (Spinning Wheel Music Box)
+    details: 手摇纸带八音盒。粘贴 MML 乐谱，或一边听 YouTube 歌曲一边打孔制作乐谱，实例中的所有人一起听同一首曲子。
+    icon: 🎵
 ---
