@@ -39,16 +39,16 @@ const href = (slug: string) => localePath(locale, pagePath(guide.slug, slug));
         <GuideIcon name={guide.icon} size={22} className="doc-guide-icon" />
         <span>{guide.name[locale]}</span>
       </a>
-      {guide.booth && (
-        <a class="doc-chip" href={guide.booth} target="_blank" rel="noopener">
-          <ShoppingBag size={13} aria-hidden="true" />{t.booth}<span class="visually-hidden">{t.newTab}</span>
-        </a>
-      )}
       <nav aria-label={t.pages}>
         <ol>
           {guide.pages.map(p => <li><a href={href(p.slug)} aria-current={p === page ? 'page' : undefined}>{p.title[locale]}</a></li>)}
         </ol>
       </nav>
+      {guide.booth && (
+        <a class="doc-chip" href={guide.booth} target="_blank" rel="noopener">
+          <ShoppingBag size={13} aria-hidden="true" />{t.booth}<span class="visually-hidden">{t.newTab}</span>
+        </a>
+      )}
     </aside>
     <article class="doc-body">
       <div class="prose"><Content /></div>
