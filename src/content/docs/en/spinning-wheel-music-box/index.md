@@ -19,7 +19,7 @@ Turn the handle faster and the song speeds up. Let go and it slows to a stop, li
 - Paste a YouTube link and punch a new score while the song plays (PC only)
 - Save the songs you made to the world data so they are still there next time (10 songs per person)
 - Hear the songs everyone in the instance has saved, all in one list
-- Switch between 4 instruments: Music box, Marimba, Piano, Clavichord
+- Switch between 4 instruments: Music box, Marimba, Piano, Handpan
 
 Everyone in the instance hears the same song at the same time.
 
@@ -29,9 +29,3 @@ Everyone in the instance hears the same song at the same time.
 2. [Installation](./installation.md): setup and settings for world creators.
 
 If something goes wrong, see [Troubleshooting](./troubleshooting.md).
-
-## Get it
-
-Available on BOOTH.
-
-- Shop: [nupamo.booth.pm/items/9134116](https://nupamo.booth.pm/items/9134116)

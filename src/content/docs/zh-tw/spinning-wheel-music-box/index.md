@@ -19,7 +19,7 @@ description: 手搖紙樂譜音樂盒「紡車音樂盒（Spinning Wheel Music B
 - 貼上 YouTube 連結，一邊聽歌一邊在紙上打孔製作樂譜（僅限 PC）
 - 把做好的曲子儲存到世界資料中，下次來也能再聽（每人最多 10 首）
 - 在同一個清單裡一起聽實例中所有人儲存的曲子
-- 切換 4 種音色（音樂盒、馬林巴、鋼琴、擊弦古鋼琴）
+- 切換 4 種音色（音樂盒、馬林巴、鋼琴、手碟）
 
 實例裡的所有人會在同一時間聽到同一首曲子。
 
@@ -31,9 +31,3 @@ description: 手搖紙樂譜音樂盒「紡車音樂盒（Spinning Wheel Music B
 2. [安裝到世界](./installation.md)：給世界製作者的安裝與設定。
 
 遇到問題時，請查看 [疑難排解](./troubleshooting.md)。
-
-## 取得
-
-可在 BOOTH 購買。
-
-- 商店：[nupamo.booth.pm/items/9134116](https://nupamo.booth.pm/items/9134116)

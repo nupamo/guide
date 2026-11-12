@@ -19,7 +19,7 @@ description: 手摇纸乐谱八音盒「纺车八音盒（Spinning Wheel Music B
 - 粘贴 YouTube 链接，一边听歌一边在纸上打孔制作乐谱（仅限 PC）
 - 把做好的曲子保存到世界数据中，下次来也能再听（每人最多 10 首）
 - 在同一个列表里一起听实例中所有人保存的曲子
-- 切换 4 种音色（八音盒、马林巴、钢琴、击弦古钢琴）
+- 切换 4 种音色（八音盒、马林巴、钢琴、手碟）
 
 实例里的所有人会在同一时间听到同一首曲子。
 
@@ -29,9 +29,3 @@ description: 手摇纸乐谱八音盒「纺车八音盒（Spinning Wheel Music B
 2. [安装到世界](./installation.md)：面向世界制作者的安装与设置。
 
 遇到问题时，请查看 [故障排除](./troubleshooting.md)。
-
-## 获取
-
-可在 BOOTH 购买。
-
-- 店铺：[nupamo.booth.pm/items/9134116](https://nupamo.booth.pm/items/9134116)
