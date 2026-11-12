@@ -15,6 +15,9 @@ hero:
     - theme: alt
       text: PhotoFrameを設定する
       link: /ja/photoframe/frame-materials
+    - theme: alt
+      text: 糸車オルゴールを見る
+      link: /ja/spinning-wheel-music-box/
 
 features:
   - title: Split MMD Player
@@ -26,4 +29,7 @@ features:
   - title: AutoResize PhotoFrame
     details: 高品質な額縁効果のための専用シェーダーガイドです。ガラスの反射、立体的なフレーム、マージン設定で独自の額縁をデザインしましょう。
     icon: 🎨
+  - title: 糸車オルゴール (Spinning Wheel Music Box)
+    details: 手回しの紙楽譜オルゴールです。MMLの楽譜を貼るか、YouTubeの曲を聴きながら穴をあけて楽譜を作り、インスタンスの全員で同じ曲を聴けます。
+    icon: 🎵
 ---

@@ -15,6 +15,9 @@ hero:
     - theme: alt
       text: PhotoFrame 설정하기
       link: /photoframe/frame-materials
+    - theme: alt
+      text: 물레 오르골 보기
+      link: /spinning-wheel-music-box/
 
 features:
   - title: Split MMD Player
@@ -26,4 +29,7 @@ features:
   - title: AutoResize PhotoFrame
     details: 고퀄리티 액자 효과를 위한 전용 셰이더 가이드입니다. 유리 반사, 입체적인 프레임, 마진 설정을 통해 나만의 액자를 디자인해보세요.
     icon: 🎨
+  - title: 물레 오르골 (Spinning Wheel Music Box)
+    details: 손으로 돌리는 종이악보 오르골입니다. MML 악보를 붙여 넣거나 YouTube 곡을 들으며 구멍을 뚫어 악보를 만들고, 인스턴스의 모두가 같은 곡을 함께 듣습니다.
+    icon: 🎵
 ---
