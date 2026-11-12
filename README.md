@@ -29,6 +29,8 @@ npm run build
 - 제목 id 고정: `## 곡 프리셋 {#song-presets}`.
 - 영상: `<div class="video"><iframe src="https://www.youtube.com/embed/…" title="…" allowfullscreen loading="lazy"></iframe></div>`.
 
+remark 플러그인을 고친 뒤에는 `node_modules/.astro/data-store.json`을 지우고 빌드하세요(렌더링된 Markdown 캐시).
+
 새 가이드는 `src/data/guides.ts`에 등록하고 5개 언어의 Markdown을 추가합니다.
 
 ## URL
