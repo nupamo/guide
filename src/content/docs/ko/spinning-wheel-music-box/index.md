@@ -1,0 +1,37 @@
+---
+title: 물레 오르골
+description: 손으로 돌리는 종이악보 오르골, Spinning Wheel Music Box 가이드
+---
+
+# 물레 오르골 (Spinning Wheel Music Box)
+
+<div class="video"><iframe src="https://www.youtube.com/embed/IXuZD89Atw8" title="Spinning Wheel Music Box Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+
+물레 오르골은 VRChat 월드에 놓는 손으로 돌리는 종이악보 오르골입니다.
+
+종이 악보가 물레처럼 생긴 바퀴를 한 바퀴 감아 돌면서 연주됩니다. 종이에 뚫린 구멍이 빗살(콤)에 닿을 때마다 음이 납니다.
+손잡이를 빨리 돌리면 곡도 빨라지고, 손을 놓으면 진짜 오르골처럼 천천히 멈춥니다.
+
+## 할 수 있는 것
+
+- 손잡이를 잡고 직접 돌려서 연주하기 (수동), 또는 저절로 반복 재생하기 (자동)
+- MML 악보를 붙여 넣어 바로 연주하기 (6트랙, 6,000자까지, 마비노기 MML 문법도 지원)
+- YouTube 링크를 넣고 곡을 들으면서 종이에 구멍을 뚫어 악보 만들기 (PC 전용)
+- 만든 곡을 월드 데이터에 저장해서 다음에 와도 다시 듣기 (한 사람당 10곡)
+- 같은 인스턴스에 있는 사람들이 저장한 곡을 한 목록에서 같이 듣기
+- 음색 4종 (오르골, 마림바, 피아노, 클라비코드) 바꾸기
+
+인스턴스의 모두가 같은 곡을 같은 타이밍에 듣습니다.
+
+## 처음 사용하는 경우
+
+1. [오르골 사용법](./how-to-play.md): 월드에서 오르골을 쓰는 방법입니다. 월드에 놀러 온 사람도 이 페이지만 보면 됩니다.
+2. [월드에 설치하기](./installation.md): 월드 제작자를 위한 설치와 설정입니다.
+
+문제가 생겼다면 [문제 해결](./troubleshooting.md)을 확인해 주세요.
+
+## 구입
+
+BOOTH에서 구입할 수 있습니다.
+
+- 상점: [nupamo.booth.pm/items/9134116](https://nupamo.booth.pm/items/9134116)
