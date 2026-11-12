@@ -37,5 +37,3 @@ description: 手搖紙樂譜音樂盒「紡車音樂盒（Spinning Wheel Music B
 可在 BOOTH 購買。
 
 - 商店：[nupamo.booth.pm/items/9134116](https://nupamo.booth.pm/items/9134116)
-
-<a href="https://nupamo.booth.pm/items/9134116"><img src="/spinning-wheel-music-box-qr.png" alt="QR: nupamo.booth.pm/items/9134116" width="160"></a>

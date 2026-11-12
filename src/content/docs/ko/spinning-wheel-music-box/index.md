@@ -35,5 +35,3 @@ description: 손으로 돌리는 종이악보 오르골, Spinning Wheel Music Bo
 BOOTH에서 구입할 수 있습니다.
 
 - 상점: [nupamo.booth.pm/items/9134116](https://nupamo.booth.pm/items/9134116)
-
-<a href="https://nupamo.booth.pm/items/9134116"><img src="/spinning-wheel-music-box-qr.png" alt="QR: nupamo.booth.pm/items/9134116" width="160"></a>

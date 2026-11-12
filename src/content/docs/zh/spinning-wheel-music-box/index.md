@@ -35,5 +35,3 @@ description: 手摇纸乐谱八音盒「纺车八音盒（Spinning Wheel Music B
 可在 BOOTH 购买。
 
 - 店铺：[nupamo.booth.pm/items/9134116](https://nupamo.booth.pm/items/9134116)
-
-<a href="https://nupamo.booth.pm/items/9134116"><img src="/spinning-wheel-music-box-qr.png" alt="QR: nupamo.booth.pm/items/9134116" width="160"></a>

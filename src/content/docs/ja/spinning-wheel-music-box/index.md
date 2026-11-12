@@ -35,5 +35,3 @@ description: 手回しの紙楽譜オルゴール「糸車オルゴール（Spin
 BOOTHで入手できます。
 
 - ショップ：[nupamo.booth.pm/items/9134116](https://nupamo.booth.pm/items/9134116)
-
-<a href="https://nupamo.booth.pm/items/9134116"><img src="/spinning-wheel-music-box-qr.png" alt="QR: nupamo.booth.pm/items/9134116" width="160"></a>

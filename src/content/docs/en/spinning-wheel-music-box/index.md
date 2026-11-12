@@ -35,5 +35,3 @@ If something goes wrong, see [Troubleshooting](./troubleshooting.md).
 Available on BOOTH.
 
 - Shop: [nupamo.booth.pm/items/9134116](https://nupamo.booth.pm/items/9134116)
-
-<a href="https://nupamo.booth.pm/items/9134116"><img src="/spinning-wheel-music-box-qr.png" alt="QR: nupamo.booth.pm/items/9134116" width="160"></a>
