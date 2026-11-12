@@ -20,7 +20,6 @@ const t = getMessages(locale);
           <div class="tool-copy">
             <strong>{guide.name[locale]}</strong>
             <span>{guide.description[locale]}</span>
-            <small>{t.pageCount(guide.pages.length)}</small>
           </div>
         </a>
       ))}
@@ -35,7 +34,6 @@ const t = getMessages(locale);
               <div class="tool-copy">
                 <strong>{project.name}<ArrowUpRight className="external-mark" size={14} aria-hidden="true" /><span class="visually-hidden">{t.newTab}</span></strong>
                 <span>{project.description[locale]}</span>
-                <small>{project.domain}</small>
               </div>
             </a>
           ))}

@@ -110,18 +110,17 @@ export interface Project {
   href: string;
   name: string;
   description: Localized;
-  domain: string;
   icon: IconName;
 }
 
 // Other projects linked below the guide list. They open on their own sites.
 export const projects: Project[] = [
   {
-    href: 'https://tools.nupa.moe/', name: 'tools', domain: 'tools.nupa.moe', icon: 'wrench',
+    href: 'https://tools.nupa.moe/', name: 'tools', icon: 'wrench',
     description: { ko: '직접 쓰려고 만든 작은 도구들', en: 'Small tools I made for myself', ja: '自分用に作った小さな道具', zh: '自用的小工具', 'zh-tw': '自用的小工具' },
   },
   {
-    href: 'https://bot.nupa.moe/', name: 'Pamo_bot', domain: 'bot.nupa.moe', icon: 'bot',
+    href: 'https://bot.nupa.moe/', name: 'Pamo_bot', icon: 'bot',
     description: { ko: '디스코드 봇', en: 'Discord bot', ja: 'Discord ボット', zh: 'Discord 机器人', 'zh-tw': 'Discord 機器人' },
   },
 ];
