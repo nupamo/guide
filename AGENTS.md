@@ -2,11 +2,11 @@
 
 ## Product contract
 
-- Same visual language as nupamo/tools: wordmark header with language switch, home page with a name, one-line description and tiles (icon, name, description), then "다른 프로젝트" links from `projects` in `src/data/guides.ts`.
+- Same visual language as nupamo/tools: wordmark header with a language select and a light/dark toggle, home page with a name, one-line description and tiles (icon, name, description), then "다른 프로젝트" links from `projects` in `src/data/guides.ts`.
 - Guide pages: left list of this guide's pages (+ BOOTH chip), article, right "on this page" from h2/h3. Prev/next at the bottom. No site-wide sidebar of every guide.
 - Every page exists in Korean (site root), English, Japanese, Simplified and Traditional Chinese. The header links to the same page in each language.
-- Colours follow the OS light/dark setting. Use Astryx theme tokens, not fixed colours.
-- No client JavaScript, analytics or marketing sections. Do not list guides that have no pages.
+- Colours follow the OS light/dark setting until the header toggle picks one (saved in localStorage `guide-theme`, applied as `html[data-theme]`). Use Astryx theme tokens, not fixed colours.
+- Client JavaScript is limited to the small inline scripts in `Layout.astro` (language select, theme toggle). No analytics or marketing sections. Do not list guides that have no pages.
 
 ## Architecture
 

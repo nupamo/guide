@@ -5,6 +5,8 @@ description: Guide for Spinning Wheel Music Box, a hand-cranked paper-score musi
 
 # Spinning Wheel Music Box
 
+<div class="video"><iframe src="https://www.youtube.com/embed/IXuZD89Atw8" title="Spinning Wheel Music Box Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+
 Spinning Wheel Music Box is a hand-cranked paper-score music box you can place in a VRChat world.
 
 The paper score loops around a wheel shaped like a spinning wheel. Each time a punched hole reaches the comb, a note plays.
@@ -30,8 +32,8 @@ If something goes wrong, see [Troubleshooting](./troubleshooting.md).
 
 ## Get it
 
-It is getting ready for BOOTH. It will appear in the shop below when it is out.
+Available on BOOTH.
 
-- Shop: [nupamo.booth.pm](https://nupamo.booth.pm/)
+- Shop: [nupamo.booth.pm/items/9134116](https://nupamo.booth.pm/items/9134116)
 
-<a href="https://nupamo.booth.pm/"><img src="/booth-qr.png" alt="QR: nupamo.booth.pm" width="160"></a>
+<a href="https://nupamo.booth.pm/items/9134116"><img src="/spinning-wheel-music-box-qr.png" alt="QR: nupamo.booth.pm/items/9134116" width="160"></a>

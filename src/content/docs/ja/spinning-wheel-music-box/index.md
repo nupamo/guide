@@ -5,6 +5,8 @@ description: 手回しの紙楽譜オルゴール「糸車オルゴール（Spin
 
 # 糸車オルゴール (Spinning Wheel Music Box)
 
+<div class="video"><iframe src="https://www.youtube.com/embed/IXuZD89Atw8" title="Spinning Wheel Music Box Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+
 糸車オルゴールは、VRChatワールドに置ける手回しの紙楽譜オルゴールです。
 
 紙の楽譜が糸車のような車輪にぐるりと掛かり、回りながら演奏します。紙にあいた穴が櫛歯に届くたびに音が鳴ります。
@@ -30,8 +32,8 @@ description: 手回しの紙楽譜オルゴール「糸車オルゴール（Spin
 
 ## 入手
 
-BOOTHで公開の準備中です。公開されたら下のショップに並びます。
+BOOTHで入手できます。
 
-- ショップ：[nupamo.booth.pm](https://nupamo.booth.pm/)
+- ショップ：[nupamo.booth.pm/items/9134116](https://nupamo.booth.pm/items/9134116)
 
-<a href="https://nupamo.booth.pm/"><img src="/booth-qr.png" alt="QR: nupamo.booth.pm" width="160"></a>
+<a href="https://nupamo.booth.pm/items/9134116"><img src="/spinning-wheel-music-box-qr.png" alt="QR: nupamo.booth.pm/items/9134116" width="160"></a>

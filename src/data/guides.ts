@@ -93,6 +93,7 @@ export const guides: Guide[] = [
       'zh-tw': '手搖紙樂譜音樂盒，實例中的所有人一起聽。',
     },
     icon: 'music',
+    booth: 'https://nupamo.booth.pm/items/9134116',
     pages: [
       { slug: 'index', title: { ko: '소개', en: 'Introduction', ja: '紹介', zh: '介绍', 'zh-tw': '介紹' } },
       { slug: 'how-to-play', title: { ko: '오르골 사용법', en: 'How to play', ja: 'オルゴールの使い方', zh: '八音盒的使用方法', 'zh-tw': '音樂盒的使用方法' } },

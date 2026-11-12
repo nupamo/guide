@@ -5,6 +5,8 @@ description: 手摇纸乐谱八音盒「纺车八音盒（Spinning Wheel Music B
 
 # 纺车八音盒 (Spinning Wheel Music Box)
 
+<div class="video"><iframe src="https://www.youtube.com/embed/IXuZD89Atw8" title="Spinning Wheel Music Box Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+
 纺车八音盒是一款可以放进 VRChat 世界的手摇纸乐谱八音盒。
 
 纸质乐谱绕在一个像纺车一样的轮子上，转一圈就演奏一遍。纸上打出的孔每碰到一次音梳，就会响起一个音。
@@ -30,8 +32,8 @@ description: 手摇纸乐谱八音盒「纺车八音盒（Spinning Wheel Music B
 
 ## 获取
 
-正在准备上架 BOOTH。上架后会出现在下面的店铺中。
+可在 BOOTH 购买。
 
-- 店铺：[nupamo.booth.pm](https://nupamo.booth.pm/)
+- 店铺：[nupamo.booth.pm/items/9134116](https://nupamo.booth.pm/items/9134116)
 
-<a href="https://nupamo.booth.pm/"><img src="/booth-qr.png" alt="QR: nupamo.booth.pm" width="160"></a>
+<a href="https://nupamo.booth.pm/items/9134116"><img src="/spinning-wheel-music-box-qr.png" alt="QR: nupamo.booth.pm/items/9134116" width="160"></a>

@@ -5,6 +5,8 @@ description: 손으로 돌리는 종이악보 오르골, Spinning Wheel Music Bo
 
 # 물레 오르골 (Spinning Wheel Music Box)
 
+<div class="video"><iframe src="https://www.youtube.com/embed/IXuZD89Atw8" title="Spinning Wheel Music Box Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+
 물레 오르골은 VRChat 월드에 놓는 손으로 돌리는 종이악보 오르골입니다.
 
 종이 악보가 물레처럼 생긴 바퀴를 한 바퀴 감아 돌면서 연주됩니다. 종이에 뚫린 구멍이 빗살(콤)에 닿을 때마다 음이 납니다.
@@ -30,8 +32,8 @@ description: 손으로 돌리는 종이악보 오르골, Spinning Wheel Music Bo
 
 ## 구입
 
-BOOTH에 올릴 준비를 하고 있습니다. 공개되면 아래 상점에 올라옵니다.
+BOOTH에서 구입할 수 있습니다.
 
-- 상점: [nupamo.booth.pm](https://nupamo.booth.pm/)
+- 상점: [nupamo.booth.pm/items/9134116](https://nupamo.booth.pm/items/9134116)
 
-<a href="https://nupamo.booth.pm/"><img src="/booth-qr.png" alt="QR: nupamo.booth.pm" width="160"></a>
+<a href="https://nupamo.booth.pm/items/9134116"><img src="/spinning-wheel-music-box-qr.png" alt="QR: nupamo.booth.pm/items/9134116" width="160"></a>

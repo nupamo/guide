@@ -5,6 +5,8 @@ description: 手搖紙樂譜音樂盒「紡車音樂盒（Spinning Wheel Music B
 
 # 紡車音樂盒 (Spinning Wheel Music Box)
 
+<div class="video"><iframe src="https://www.youtube.com/embed/IXuZD89Atw8" title="Spinning Wheel Music Box Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+
 紡車音樂盒是一款可以放進 VRChat 世界的手搖紙樂譜音樂盒。
 
 紙製樂譜繞在一個像紡車一樣的輪子上，轉一圈就演奏一遍。紙上打出的孔每碰到一次音梳，就會響起一個音。
@@ -32,8 +34,8 @@ description: 手搖紙樂譜音樂盒「紡車音樂盒（Spinning Wheel Music B
 
 ## 取得
 
-正在準備上架 BOOTH。上架後會出現在下面的商店中。
+可在 BOOTH 購買。
 
-- 商店：[nupamo.booth.pm](https://nupamo.booth.pm/)
+- 商店：[nupamo.booth.pm/items/9134116](https://nupamo.booth.pm/items/9134116)
 
-<a href="https://nupamo.booth.pm/"><img src="/booth-qr.png" alt="QR: nupamo.booth.pm" width="160"></a>
+<a href="https://nupamo.booth.pm/items/9134116"><img src="/spinning-wheel-music-box-qr.png" alt="QR: nupamo.booth.pm/items/9134116" width="160"></a>
