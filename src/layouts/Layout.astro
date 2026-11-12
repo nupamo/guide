@@ -1,12 +1,9 @@
 ---
 import '../styles/global.css';
 import { LOCALES, LOCALE_NAMES, getMessages, localePath, type Locale } from '../i18n';
-import { guides, pagePath } from '../data/guides';
-import GuideIcon from '../components/GuideIcon';
 import { Languages, Moon, Sun } from 'lucide-react';
-interface Props { title: string; description: string; locale: Locale; path?: string; home?: boolean; doc?: boolean; /** Current guide slug: shows the guide picker next to the wordmark. */ guide?: string; }
-const { title, description, locale, path = '', home = false, doc = false, guide } = Astro.props;
-const current = guides.find(g => g.slug === guide);
+interface Props { title: string; description: string; locale: Locale; path?: string; home?: boolean; doc?: boolean; }
+const { title, description, locale, path = '', home = false, doc = false } = Astro.props;
 const t = getMessages(locale);
 const site = Astro.site ?? Astro.url;
 ---
@@ -30,18 +27,7 @@ const site = Astro.site ?? Astro.url;
   <body class:list={{ 'home-page': home, 'doc-page': doc }}>
     <a href="#main" class="skip-link">{t.skip}</a>
     <header class="site-header">
-      <div class="brand">
-        <a class="wordmark" href={localePath(locale)} aria-label={t.home}>guide<span aria-hidden="true">.</span></a>
-        {current && (
-          <label class="header-select guide-select">
-            <GuideIcon name={current.icon} size={14} />
-            <span class="visually-hidden">{t.guides}</span>
-            <select data-nav-select>
-              {guides.map(g => <option value={localePath(locale, pagePath(g.slug, g.pages[0].slug))} selected={g === current}>{g.name[locale]}</option>)}
-            </select>
-          </label>
-        )}
-      </div>
+      <a class="wordmark" href={localePath(locale)} aria-label={t.home}>guide<span aria-hidden="true">.</span></a>
       <div class="header-actions">
         <slot name="header-nav" />
         <label class="header-select language-select">
