@@ -29,7 +29,7 @@ const site = Astro.site ?? Astro.url;
     <header class="site-header">
       <a class="wordmark" href={localePath(locale)} aria-label={t.home}>guide<span aria-hidden="true">.</span></a>
       <div class="header-actions">
-        <slot name="header-nav"><a class="header-link" href={localePath(locale)}>{t.guideList}</a></slot>
+        <slot name="header-nav" />
         <label class="language-select">
           <Languages size={14} aria-hidden="true" />
           <span class="visually-hidden">{t.language}</span>
