@@ -30,10 +30,10 @@ const site = Astro.site ?? Astro.url;
       <a class="wordmark" href={localePath(locale)} aria-label={t.home}>guide<span aria-hidden="true">.</span></a>
       <div class="header-actions">
         <slot name="header-nav" />
-        <label class="language-select">
+        <label class="header-select language-select">
           <Languages size={14} aria-hidden="true" />
           <span class="visually-hidden">{t.language}</span>
-          <select data-language-select>
+          <select data-nav-select>
             {LOCALES.map(l => <option value={localePath(l, path)} lang={LOCALE_NAMES[l].lang} selected={l === locale}>{LOCALE_NAMES[l].name}</option>)}
           </select>
         </label>
@@ -50,7 +50,7 @@ const site = Astro.site ?? Astro.url;
     </header>
     <main id="main"><slot /></main>
     <script is:inline>
-      document.querySelector('[data-language-select]')?.addEventListener('change', e => { location.href = e.target.value; });
+      document.querySelectorAll('[data-nav-select]').forEach(s => s.addEventListener('change', e => { location.href = e.target.value; }));
       const button = document.querySelector('[data-theme-toggle]');
       const root = document.documentElement;
       const media = matchMedia('(prefers-color-scheme: dark)');

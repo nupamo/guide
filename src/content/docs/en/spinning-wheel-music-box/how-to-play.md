@@ -62,5 +62,5 @@ Tap `+ Add score` under the list.
 
 Tap the gear at the top right of the screen.
 
-- **Sound**: Music box, Marimba, Piano or Clavichord. It changes for everyone right away, even while a song is playing.
+- **Sound**: Music box, Marimba, Piano or Handpan. It changes for everyone right away, even while a song is playing.
 - **Language** and **Volume** only affect your own screen and sound.

@@ -15,18 +15,18 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .skip-link:focus { top: 8px; }
 
 .site-header { position: sticky; top: 0; z-index: 10; height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0 32px; border-bottom: 1px solid var(--line); background: var(--page); }
-.wordmark { font-size: 24px; font-weight: 750; letter-spacing: -1.1px; }
+.wordmark { flex: none; font-size: 24px; font-weight: 750; letter-spacing: -1.1px; }
 .wordmark span { color: var(--accent); }
 .header-link { color: var(--muted); font-size: 13px; white-space: nowrap; }
 .header-link:hover { color: var(--ink); text-decoration: underline; }
 .home-page .site-header { position: static; border-bottom: 0; }
 .header-actions { display: flex; align-items: center; gap: 8px; min-width: 0; }
 .header-actions > .header-link { margin-right: 12px; }
-.language-select { position: relative; display: inline-flex; align-items: center; color: var(--muted); }
-.language-select svg { position: absolute; left: 9px; pointer-events: none; }
-.language-select select { appearance: none; -webkit-appearance: none; height: 30px; padding: 0 28px 0 28px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23888' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 10px center; color: var(--ink); font: inherit; font-size: 12px; cursor: pointer; }
-.language-select select:hover, .theme-toggle:hover { border-color: var(--color-border-emphasized); }
-.language-select select:focus-visible, .theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.header-select { position: relative; display: inline-flex; align-items: center; color: var(--muted); }
+.header-select svg { position: absolute; left: 9px; pointer-events: none; }
+.header-select select { appearance: none; -webkit-appearance: none; height: 30px; padding: 0 28px 0 28px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23888' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 10px center; color: var(--ink); font: inherit; font-size: 12px; cursor: pointer; }
+.header-select select:hover, .theme-toggle:hover { border-color: var(--color-border-emphasized); }
+.header-select select:focus-visible, .theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .theme-toggle { display: inline-grid; place-items: center; width: 30px; height: 30px; padding: 0; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); cursor: pointer; }
 .theme-toggle[hidden] { display: none; }
 .theme-toggle .icon-sun, .theme-toggle[aria-pressed=true] .icon-moon { display: none; }
@@ -54,16 +54,21 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .section-divider h2 { font-size: 13px; font-weight: 600; color: var(--muted); white-space: nowrap; }
 
 /* Guide page: page list · article · on this page */
-.doc-shell { width: min(1240px, 100%); margin: 0 auto; padding: 32px 32px 80px; display: grid; grid-template-columns: 220px minmax(0, 1fr) 200px; gap: 48px; align-items: start; }
+.doc-shell { width: min(1240px, 100%); margin: 0 auto; padding: 32px 32px 80px; display: grid; grid-template-columns: 250px minmax(0, 1fr) 200px; gap: 48px; align-items: start; }
 .doc-nav, .doc-toc { position: sticky; top: 96px; max-height: calc(100dvh - 120px); overflow-y: auto; }
 .doc-nav { display: flex; flex-direction: column; gap: 14px; }
-.doc-guide { display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 650; letter-spacing: -.2px; line-height: 1.3; }
-.doc-guide-icon { flex: none; opacity: .85; }
 .doc-nav ol, .doc-toc ol { list-style: none; margin: 0; padding: 0; }
 .doc-nav ol { display: grid; gap: 1px; border-left: 1px solid var(--line); }
 .doc-nav li a { display: block; margin-left: -1px; padding: 5px 12px; border-left: 2px solid transparent; color: var(--muted); font-size: 13px; line-height: 1.45; }
 .doc-nav li a:hover { color: var(--ink); }
 .doc-nav li a[aria-current=page] { color: var(--ink); font-weight: 600; border-left-color: var(--accent); }
+.doc-guide { position: relative; align-self: flex-start; max-width: 100%; display: flex; align-items: center; gap: 10px; min-width: 0; }
+.doc-guide select { appearance: none; -webkit-appearance: none; flex: 0 1 auto; field-sizing: content; max-width: 100%; min-width: 0; margin: -4px -6px; padding: 4px 26px 4px 6px; border: 1px solid transparent; border-radius: 8px; background: transparent; color: var(--ink); font: inherit; font-size: 15px; font-weight: 650; letter-spacing: -.2px; line-height: 1.3; text-overflow: ellipsis; cursor: pointer; }
+.doc-guide select:hover { border-color: var(--line); background: var(--surface); }
+.doc-guide select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.doc-guide select option { font-weight: 400; }
+.doc-guide-chevron { position: absolute; right: -2px; color: var(--muted); pointer-events: none; }
+.doc-guide-icon { flex: none; opacity: .85; }
 .doc-chip { align-self: flex-start; display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--muted); font-size: 12px; }
 .doc-chip:hover { color: var(--ink); border-color: var(--color-border-emphasized); }
 .doc-toc h2 { font-size: 12px; font-weight: 600; color: var(--muted); margin-bottom: 8px; }
