@@ -1,0 +1,46 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import GuideIcon from '../../components/GuideIcon';
+import { guides, projects, pagePath } from '../../data/guides';
+import { getMessages, localePath, localeStaticPaths, type Locale } from '../../i18n';
+import { ArrowUpRight } from 'lucide-react';
+export const getStaticPaths = localeStaticPaths;
+const { locale } = Astro.props as { locale: Locale };
+const t = getMessages(locale);
+---
+<Layout title="guide" description={t.tagline} locale={locale} home>
+  <a slot="header-nav" class="header-link" href="https://nupa.moe/license/">{t.license}</a>
+  <div class="directory">
+    <h1>guide</h1>
+    <p class="directory-description">{t.tagline}</p>
+    <nav class="tool-grid" aria-label={t.guides}>
+      {guides.map(guide => (
+        <a class="tool-tile" href={localePath(locale, pagePath(guide.slug, guide.pages[0].slug))}>
+          <GuideIcon name={guide.icon} className="tool-tile-icon" />
+          <div class="tool-copy">
+            <strong>{guide.name[locale]}</strong>
+            <span>{guide.description[locale]}</span>
+            <small>{t.pageCount(guide.pages.length)}</small>
+          </div>
+        </a>
+      ))}
+    </nav>
+    {projects.length > 0 && (
+      <section class="projects" aria-labelledby="projects-heading">
+        <div class="section-divider"><h2 id="projects-heading">{t.otherProjects}</h2></div>
+        <nav class="tool-grid" aria-labelledby="projects-heading">
+          {projects.map(project => (
+            <a class="tool-tile" href={project.href} target="_blank" rel="noopener">
+              <GuideIcon name={project.icon} className="tool-tile-icon" />
+              <div class="tool-copy">
+                <strong>{project.name}<ArrowUpRight className="external-mark" size={14} aria-hidden="true" /><span class="visually-hidden">{t.newTab}</span></strong>
+                <span>{project.description[locale]}</span>
+                <small>{project.domain}</small>
+              </div>
+            </a>
+          ))}
+        </nav>
+      </section>
+    )}
+  </div>
+</Layout>

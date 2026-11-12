@@ -1,18 +1,29 @@
 {
   "name": "guide",
-  "private": true,
+  "version": "0.1.0",
+  "description": "직접 만든 Unity 에셋·셰이더 가이드. Astro static + Astryx.",
   "type": "module",
+  "private": true,
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "dev": "astro dev --host 0.0.0.0",
+    "check": "astro check",
+    "build": "astro build",
+    "preview": "astro preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@astrojs/markdown-remark": "7.3.8",
+    "@astrojs/react": "7.0.1",
+    "@astryxdesign/core": "0.7.0",
+    "@astryxdesign/theme-neutral": "0.7.0",
+    "astro": "7.3.8",
+    "lucide-react": "1.57.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
   },
   "devDependencies": {
-    "vitepress": "^1.6.4"
-  },
-  "pnpm": {
-    "overrides": {
-      "vite": "6.4.5"
-    }
+    "@astrojs/check": "0.9.10",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "typescript": "6.0.3"
   }
 }
