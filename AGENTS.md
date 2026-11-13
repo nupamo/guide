@@ -6,7 +6,7 @@
 - Guide pages: left column with a guide select (icon + current guide name, switches to another guide), this guide's pages and the BOOTH chip below them, article, right "on this page" from h2/h3. Prev/next at the bottom. No site-wide sidebar of every guide.
 - Every page exists in Korean (site root), English, Japanese, Simplified and Traditional Chinese. The header links to the same page in each language.
 - Colours follow the OS light/dark setting until the header toggle picks one (saved in localStorage `guide-theme`, applied as `html[data-theme]`). Use Astryx theme tokens, not fixed colours.
-- Client JavaScript is limited to the small inline scripts in `Layout.astro` (guide/language selects, theme toggle). No analytics or marketing sections. Do not list guides that have no pages.
+- Client JavaScript is limited to Google Analytics (`G-SYEWNRRSVM`, shared with nupa.moe, tools and vrcti) and the small inline scripts in `Layout.astro` (guide select, language select, theme toggle). No other analytics or marketing sections. Do not list guides that have no pages.
 
 ## Architecture
 
