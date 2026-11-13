@@ -2,7 +2,7 @@
 
 직접 만든 Unity 에셋과 셰이더의 사용 설명서. https://nupa.moe/guide/
 
-[tools](https://github.com/nupamo/tools)와 같은 구성(Astro static + Astryx Neutral)입니다. JavaScript는 언어 선택과 다크 모드 토글용 인라인 스크립트뿐입니다.
+[tools](https://github.com/nupamo/tools)와 같은 구성(Astro static + Astryx Neutral)입니다. JavaScript는 Google Analytics(`G-SYEWNRRSVM`)와 가이드·언어 선택, 다크 모드 토글용 인라인 스크립트뿐입니다.
 
 ## 개발 및 배포
 
