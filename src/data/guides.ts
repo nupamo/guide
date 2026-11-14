@@ -1,4 +1,5 @@
 import type { Localized } from '../i18n';
+import { releases } from './releases';
 
 export type IconName = 'clapperboard' | 'gallery' | 'frame' | 'music' | 'wrench' | 'bot';
 
@@ -14,6 +15,8 @@ export interface Guide {
   description: Localized;
   icon: IconName;
   booth?: string;
+  /** Release line in releases.ts. Adds the changelog page at the end. */
+  release?: string;
   /** Sidebar order. The first page is the guide's entry point. */
   pages: GuidePage[];
 }
@@ -34,6 +37,7 @@ export const guides: Guide[] = [
     },
     icon: 'clapperboard',
     booth: 'https://nupamo.booth.pm/items/8450925',
+    release: 'split-mmd-player',
     pages: [
       { slug: 'index', title: { ko: '가이드', en: 'Guide', ja: 'ガイド', zh: '指南', 'zh-tw': '指南' } },
       { slug: 'option', title: { ko: '옵션', en: 'Options', ja: 'オプション', zh: '选项', 'zh-tw': '選項' } },
@@ -41,7 +45,6 @@ export const guides: Guide[] = [
       { slug: 'captions', title: { ko: '자막과 JIZURA', en: 'Captions and JIZURA', ja: '字幕とJIZURA', zh: '字幕与 JIZURA', 'zh-tw': '字幕與 JIZURA' } },
       { slug: 'keyboard', title: { ko: '키보드 조작', en: 'Keyboard controls', ja: 'キーボード操作', zh: '键盘操作', 'zh-tw': '鍵盤操作' } },
       { slug: 'recorder', title: { ko: '녹화', en: 'Recorder', ja: '録画', zh: '录制', 'zh-tw': '錄製' } },
-      { slug: 'changelog', title: { ko: '변경 이력', en: 'Changelog', ja: '変更履歴', zh: '更新日志', 'zh-tw': '更新紀錄' } },
     ],
   },
   {
@@ -56,6 +59,7 @@ export const guides: Guide[] = [
     },
     icon: 'gallery',
     booth: 'https://nupamo.booth.pm/items/8301374',
+    release: 'autoresize-photo',
     pages: [
       { slug: 'index', title: { ko: '소개', en: 'Introduction', ja: '紹介', zh: '介绍', 'zh-tw': '介紹' } },
       { slug: 'installation', title: { ko: '설치하기', en: 'Installation', ja: 'インストール', zh: '安装', 'zh-tw': '安裝' } },
@@ -77,6 +81,7 @@ export const guides: Guide[] = [
     },
     icon: 'frame',
     booth: 'https://nupamo.booth.pm/items/8301374',
+    release: 'autoresize-photo',
     pages: [
       { slug: 'frame-materials', title: { ko: '액자 머티리얼 꾸미기', en: 'Decorate frame materials', ja: 'フレームマテリアルの装飾', zh: '设置相框材质', 'zh-tw': '設定相框材質' } },
       { slug: 'shader-property', title: { ko: '셰이더 설정', en: 'Shader properties', ja: 'シェーダー設定', zh: '着色器设置', 'zh-tw': '著色器設定' } },
@@ -94,6 +99,7 @@ export const guides: Guide[] = [
     },
     icon: 'music',
     booth: 'https://nupamo.booth.pm/items/9134116',
+    release: 'spinning-wheel-music-box',
     pages: [
       { slug: 'index', title: { ko: '소개', en: 'Introduction', ja: '紹介', zh: '介绍', 'zh-tw': '介紹' } },
       { slug: 'how-to-play', title: { ko: '오르골 사용법', en: 'How to play', ja: 'オルゴールの使い方', zh: '八音盒的使用方法', 'zh-tw': '音樂盒的使用方法' } },
@@ -102,6 +108,15 @@ export const guides: Guide[] = [
     ],
   },
 ];
+
+export const CHANGELOG = 'changelog';
+const changelogPage: GuidePage = { slug: CHANGELOG, title: { ko: '변경 이력', en: 'Changelog', ja: '変更履歴', zh: '更新日志', 'zh-tw': '更新紀錄' } };
+
+/** Releases of a guide's product, newest first. */
+export const guideReleases = (guide: Guide) => (guide.release && releases[guide.release]) || [];
+
+/** Sidebar pages, with the generated changelog last when the guide has releases. */
+export const guidePages = (guide: Guide): GuidePage[] => guideReleases(guide).length ? [...guide.pages, changelogPage] : guide.pages;
 
 /** Path of a page relative to a locale root, e.g. `photogallery/` or `photogallery/installation/`. */
 export const pagePath = (guide: string, page: string) => `${guide}/${page === 'index' ? '' : `${page}/`}`;

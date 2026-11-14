@@ -12,6 +12,7 @@
 
 - Astro static output, directory-style URLs under `BASE_PATH` (`/guide/`).
 - Guides, page order and localized titles live in `src/data/guides.ts`; content in `src/content/docs/<locale>/<guide>/<page>.md`.
+- Changelogs are not Markdown. A guide's `release` points at a line in `src/data/releases.ts`; that line becomes the guide's last page (`changelog/`) and `/releases/<guide>.json`, which each product's Unity editor reads to show "new version on BOOTH". Guides sold as one BOOTH item share a line. Release notes use added / changed / fixed, one short user-facing line each, in every locale.
 - `src/lib/remark-guide.mjs` resolves relative `.md` links, `{#id}` heading ids and root-relative images/raw HTML.
 - `src/lib/legacy-redirects.mjs` writes `<page>.html` redirects for old VitePress URLs. Keep it so external links keep working.
 

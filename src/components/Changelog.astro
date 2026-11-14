@@ -1,0 +1,24 @@
+---
+import { releaseId, type Release } from '../data/releases';
+import { getMessages, type Locale } from '../i18n';
+
+interface Props { title: string; releases: Release[]; locale: Locale; }
+const { title, releases, locale } = Astro.props;
+const t = getMessages(locale);
+---
+<h1>{title}</h1>
+{releases.map((r, i) => (
+  <section class="release">
+    <h2 id={releaseId(r)}>
+      {r.edition && <span class="release-edition">{r.edition}</span>}
+      <span>v{r.version}</span>
+      {i === 0 && <span class="release-latest">{t.latest}</span>}
+      <time datetime={r.date}>{r.date}</time>
+    </h2>
+    <ul class="release-changes">
+      {r.changes.map(c => (
+        <li>{c.kind && <span class={`change-kind kind-${c.kind}`}>{t[c.kind]}</span>}<span>{c.text[locale]}</span></li>
+      ))}
+    </ul>
+  </section>
+))}
