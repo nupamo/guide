@@ -3,12 +3,12 @@ export type Locale = typeof LOCALES[number];
 export type Localized = Record<Locale, string>;
 export const DEFAULT_LOCALE: Locale = 'ko';
 
-export const LOCALE_NAMES: Record<Locale, { short: string; name: string; lang: string }> = {
-  ko: { short: 'KO', name: '한국어', lang: 'ko' },
-  en: { short: 'EN', name: 'English', lang: 'en' },
-  ja: { short: 'JA', name: '日本語', lang: 'ja' },
-  zh: { short: '简', name: '简体中文', lang: 'zh-CN' },
-  'zh-tw': { short: '繁', name: '繁體中文', lang: 'zh-TW' },
+export const LOCALE_NAMES: Record<Locale, { short: string; name: string; lang: string; og: string }> = {
+  ko: { short: 'KO', name: '한국어', lang: 'ko', og: 'ko_KR' },
+  en: { short: 'EN', name: 'English', lang: 'en', og: 'en_US' },
+  ja: { short: 'JA', name: '日本語', lang: 'ja', og: 'ja_JP' },
+  zh: { short: '简', name: '简体中文', lang: 'zh-CN', og: 'zh_CN' },
+  'zh-tw': { short: '繁', name: '繁體中文', lang: 'zh-TW', og: 'zh_TW' },
 };
 
 const site = {

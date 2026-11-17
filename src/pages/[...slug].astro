@@ -11,22 +11,32 @@ import { ArrowLeft, ArrowRight, ChevronDown, ShoppingBag } from 'lucide-react';
 export async function getStaticPaths() {
   const entries = await getCollection('docs');
   const byId = new Map(entries.map(e => [e.id, e]));
-  return LOCALES.flatMap(locale => guides.flatMap(guide => guidePages(guide).map(page => {
-    // The changelog is generated from releases.ts; every other page is a Markdown file.
-    const entry = page.slug === CHANGELOG ? undefined : byId.get(`${locale}/${guide.slug}/${page.slug}`);
-    if (!entry && page.slug !== CHANGELOG) throw new Error(`Missing page: ${locale}/${guide.slug}/${page.slug}.md`);
-    const path = pagePath(guide.slug, page.slug);
-    return {
-      params: { slug: `${locale === DEFAULT_LOCALE ? '' : `${locale}/`}${path}`.replace(/\/$/, '') },
-      props: { locale, guide, page, entry, path },
-    };
-  })));
+  const slug = (locale: Locale, path: string) => `${locale === DEFAULT_LOCALE ? '' : `${locale}/`}${path}`.replace(/\/$/, '');
+  const paths = LOCALES.flatMap(locale => guides.flatMap(guide => {
+    const pages = guidePages(guide).map(page => {
+      // The changelog is generated from releases.ts; every other page is a Markdown file.
+      const id = `${locale}/${guide.slug}/${page.slug}`;
+      const entry = page.slug === CHANGELOG ? undefined : byId.get(id);
+      if (!entry && page.slug !== CHANGELOG) throw new Error(`Missing page: ${id}.md`);
+      byId.delete(id);
+      const path = pagePath(guide.slug, page.slug);
+      return { params: { slug: slug(locale, path) }, props: { locale, guide, page, entry, path, redirect: undefined as string | undefined } };
+    });
+    // A guide without an `index` page has nothing at its own URL: send it to the first page.
+    if (guide.pages[0].slug === 'index') return pages;
+    const first = pages[0];
+    return [...pages, { params: { slug: slug(locale, pagePath(guide.slug, 'index')) }, props: { ...first.props, redirect: localePath(locale, first.props.path) } }];
+  }));
+  // A file that guides.ts does not list would never be built.
+  if (byId.size) throw new Error(`Pages missing from src/data/guides.ts: ${[...byId.keys()].map(id => `${id}.md`).join(', ')}`);
+  return paths;
 }
 
-const { locale, guide, page, entry, path } = Astro.props as {
+const { locale, guide, page, entry, path, redirect } = Astro.props as {
   locale: Locale; guide: (typeof guides)[number]; page: (typeof guides)[number]['pages'][number];
-  entry?: Awaited<ReturnType<typeof getCollection<'docs'>>>[number]; path: string;
+  entry?: Awaited<ReturnType<typeof getCollection<'docs'>>>[number]; path: string; redirect?: string;
 };
+if (redirect) return Astro.redirect(redirect);
 const t = getMessages(locale as Locale);
 const releases = guideReleases(guide);
 const rendered = entry ? await render(entry) : undefined;
@@ -34,6 +44,8 @@ const toc = rendered
   ? rendered.headings.filter(h => h.depth === 2 || h.depth === 3)
   : releases.map(r => ({ depth: 2, slug: releaseId(r), text: `v${r.version}` }));
 const title = entry ? entry.data.title : `${guide.name[locale]} ${page.title[locale]}`;
+// Several guides have pages with the same title (Installation, Troubleshooting), so the tab title names the guide too.
+const tabTitle = title.includes(guide.name[locale]) ? title : `${title} · ${guide.name[locale]}`;
 const description = entry ? entry.data.description ?? guide.description[locale] : `${guide.name[locale]} · ${t.changelogDescription}`;
 const pages = guidePages(guide);
 const index = pages.findIndex(p => p.slug === page.slug);
@@ -41,7 +53,7 @@ const prev = pages[index - 1];
 const next = pages[index + 1];
 const href = (slug: string) => localePath(locale, pagePath(guide.slug, slug));
 ---
-<Layout title={title} description={description} locale={locale} path={path} doc>
+<Layout title={tabTitle} description={description} locale={locale} path={path} doc>
   <div class="doc-shell">
     <aside class="doc-nav">
       <label class="doc-guide">

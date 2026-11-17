@@ -43,6 +43,14 @@ description: PhotoGalleryコンポーネントの主なオプション説明
 
 壁全体に広く配置したい場合は`Horizontal`、縦長の展示形式が必要な場合は`Vertical`を試してください。
 
+## Expand Direction
+
+写真が増えたときに、`PhotoGallery`オブジェクトの現在位置を基準にどの方向へ広げるかを決めます。
+
+- `Center`: これまでどおり、ギャラリー全体が中央揃えになります。
+- `Expand Right`: 最初の列を現在位置に置き、右へ広がります。
+- `Expand Left`: 最初の列を現在位置に置き、左へ広がります。
+
 ## Frame Position / Rotation / Scale
 
 各スロット内に入る`PhotoFrame`の位置、回転、スケールです。
