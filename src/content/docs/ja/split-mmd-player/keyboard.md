@@ -7,7 +7,7 @@ description: Split MMD Playerのキーボード操作方法です。
 
 Split MMD Playerのキーボード操作方法です。マウスでクリックしたViewに対して適用されます。
 
-![image](/keyboard.png)
+![キーボード操作の図](/keyboard.png)
 
 ## 再生
 

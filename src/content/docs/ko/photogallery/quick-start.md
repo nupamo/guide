@@ -5,7 +5,7 @@ description: Scene에 사진 갤러리를 빠르게 배치하는 방법
 
 # 첫 갤러리 만들기
 
-![image](/photogallery.png)
+![갤러리 설정 예시](/photogallery.png)
 
 이 페이지는 가장 빠르게 사진 갤러리를 하나 만드는 방법입니다.
 

@@ -218,6 +218,14 @@ Automatically uses the actual aspect ratio of the photo texture.
 
 It is recommended to leave this on in most cases.
 
+### Auto Resize Image Only
+
+Applies Auto Resize to the image area only.
+
+When off, the whole frame shrinks to match the photo's aspect ratio, as before.
+
+When on, the frame fills the whole object and only the photo is shown at its aspect ratio. The space left over when the photo and frame ratios differ is filled with `Margin Color` and `Margin Texture`.
+
 ### Set ratio
 
 The ratio to use manually if `Aspect ratio from texture` is turned off.

@@ -5,7 +5,7 @@ description: How to quickly place a photo gallery in the Scene
 
 # Create First Gallery
 
-![image](/photogallery.png)
+![Gallery setup example](/photogallery.png)
 
 This page explains the fastest way to create a single photo gallery.
 
@@ -38,6 +38,7 @@ Adjust the following values in the Inspector:
 
 - `Row Count`: Determines how many photos to place per row.
 - `Layout Direction`: Determines whether to fill horizontally or vertically first.
+- `Expand Direction`: Determines whether the gallery grows from the center, to the right, or to the left of the current position as photos are added.
 - `Gap`: Adjusts the spacing between frames.
 - `Slot Size`: Adjusts the base placement size of each photo slot.
 

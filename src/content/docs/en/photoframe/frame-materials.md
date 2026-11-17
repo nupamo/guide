@@ -5,7 +5,7 @@ description: How to adjust Pro and Lite shader materials
 
 # Decorating Frame Materials
 
-![image](/shader.png)
+![Frame material settings example](/shader.png)
 
 The appearance of the frame is adjusted in the material. It is recommended to duplicate and use the default presets.
 

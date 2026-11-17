@@ -43,6 +43,14 @@ The direction to fill photos.
 
 Try using `Horizontal` if you want to spread photos widely across a wall, or `Vertical` if you need a tall exhibition format.
 
+## Expand Direction
+
+Sets which way the gallery grows from the `PhotoGallery` object's current position as photos are added.
+
+- `Center`: The whole gallery stays centered, as before.
+- `Expand Right`: The first column stays at the current position and the gallery grows to the right.
+- `Expand Left`: The first column stays at the current position and the gallery grows to the left.
+
 ## Frame Position / Rotation / Scale
 
 The position, rotation, and scale of the `PhotoFrame` placed inside each slot.

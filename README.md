@@ -31,7 +31,7 @@ npm run build
 
 remark 플러그인을 고친 뒤에는 `node_modules/.astro/data-store.json`을 지우고 빌드하세요(렌더링된 Markdown 캐시).
 
-새 가이드는 `src/data/guides.ts`에 등록하고 5개 언어의 Markdown을 추가합니다.
+새 가이드는 `src/data/guides.ts`에 등록하고 5개 언어의 Markdown을 추가합니다. 등록되지 않은 Markdown 파일이 있으면 빌드가 실패합니다. 첫 페이지가 `index`가 아닌 가이드는 가이드 주소(`/guide/<가이드>/`)가 첫 페이지로 넘어갑니다.
 
 ## URL
 

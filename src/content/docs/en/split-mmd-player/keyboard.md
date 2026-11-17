@@ -7,7 +7,7 @@ description: How to use keyboard controls in Split MMD Player.
 
 This page explains Split MMD Player keyboard controls. Controls are applied to the view that was clicked with the mouse.
 
-![image](/keyboard.png)
+![Keyboard controls diagram](/keyboard.png)
 
 ## Playback
 

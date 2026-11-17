@@ -6,6 +6,8 @@ interface Props { title: string; description: string; locale: Locale; path?: str
 const { title, description, locale, path = '', home = false, doc = false } = Astro.props;
 const t = getMessages(locale);
 const site = Astro.site ?? Astro.url;
+const canonical = new URL(localePath(locale, path), site).href;
+const fullTitle = title === 'guide' ? title : `${title} · guide`;
 ---
 <!doctype html>
 <html lang={LOCALE_NAMES[locale].lang} data-astryx-theme="neutral">
@@ -23,14 +25,21 @@ const site = Astro.site ?? Astro.url;
     <meta name="description" content={description} />
     <meta name="color-scheme" content="light dark" />
     <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
-    <link rel="canonical" href={new URL(localePath(locale, path), site).href} />
+    <link rel="canonical" href={canonical} />
     {LOCALES.map(l => <link rel="alternate" hreflang={LOCALE_NAMES[l].lang} href={new URL(localePath(l, path), site).href} />)}
     <link rel="alternate" hreflang="x-default" href={new URL(localePath('ko', path), site).href} />
     <script is:inline>
       // Apply a saved theme before paint. Without one, the OS setting decides.
       try { const t = localStorage.getItem('guide-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch {}
     </script>
-    <title>{title === 'guide' ? title : `${title} · guide`}</title>
+    <meta property="og:type" content={home ? 'website' : 'article'} />
+    <meta property="og:site_name" content="guide" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={LOCALE_NAMES[locale].og} />
+    <meta name="twitter:card" content="summary" />
+    <title>{fullTitle}</title>
   </head>
   <body class:list={{ 'home-page': home, 'doc-page': doc }}>
     <a href="#main" class="skip-link">{t.skip}</a>
@@ -58,7 +67,10 @@ const site = Astro.site ?? Astro.url;
     </header>
     <main id="main"><slot /></main>
     <script is:inline>
-      document.querySelectorAll('[data-nav-select]').forEach(s => s.addEventListener('change', e => { location.href = e.target.value; }));
+      const selects = document.querySelectorAll('[data-nav-select]');
+      selects.forEach(s => s.addEventListener('change', e => { location.href = e.target.value; }));
+      // Coming back with the back button restores the page with the other option still chosen.
+      addEventListener('pageshow', () => selects.forEach(s => { for (const o of s.options) o.selected = o.defaultSelected; }));
       const button = document.querySelector('[data-theme-toggle]');
       const root = document.documentElement;
       const media = matchMedia('(prefers-color-scheme: dark)');
